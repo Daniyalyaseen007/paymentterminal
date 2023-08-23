@@ -96,6 +96,7 @@
                                                                 <td><?=$teamlead?></td>
                                                                 <td><?=date_format(date_create($user["User_created_at"]),'d-M-Y')?></td>
                                                                 <td><?=$statusbtn?></td>
+                                                                <td></td>
                                                             </tr>
                                                             <?php
                                                             }

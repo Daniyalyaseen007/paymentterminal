@@ -94,9 +94,39 @@ class Users extends CI_Controller {
 			$this->db->insert("usersdetails",$usersdetailsArray);
 			$insertid= $this->db->insert_id();
 			if($insertid>0){
-
+				$array = array(
+					"UserName"=>$_POST["UserName"],
+					"UserPass"=>$_POST["UserPass"],
+				);
+				$config = Array(
+				  'protocol' => 'smtp',
+				  'smtp_host' => 'ssl://mail.zenedgesystems.co',
+				  'smtp_port' => 465,
+				  'smtp_user' => 'terminal@zenedgesystems.co', // change it to yours
+				  'smtp_pass' => 'RfqxZ9HY+IBI', // change it to yours
+				  'mailtype' => 'html',
+				  'charset' => 'iso-8859-1',
+				  'wordwrap' => TRUE
+				);
+				$data["details"] = $array;
+				$msg = $this->load->view('mail/welcome',$data,true);
+				$this->load->library('email',$config);
+				$toemail = $_POST["UserEmail"];
+				$this->email->to($toemail);
+				$this->email->from('terminal@zenedgesystems.co');
+				$this->email->subject('Welcome Email');
+				$this->email->message($msg);
+				if($this->email->send())
+			    {
+			    	 echo 'Email sent.';
+			    }
+			     else
+			    {
+			     show_error($this->email->print_debugger());
+			    }
+				redirect('users/list/success','refresh');
 			}
-			redirect('users/list/success','refresh');
+			
 		}
 		else{
 			return false;
@@ -167,5 +197,8 @@ class Users extends CI_Controller {
 	    {
 	     show_error($this->email->print_debugger());
 	    }*/
+	}
+	public function welcomeemail(){
+		$mesg = $this->load->view('mail/welcome');
 	}
 }

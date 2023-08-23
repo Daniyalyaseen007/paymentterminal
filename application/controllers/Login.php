@@ -62,6 +62,38 @@ class Login extends CI_Controller {
 			$this->db->insert("otp_auth",$arrayotp);
 			$insertid= $this->db->insert_id();
 			if($insertid>0){
+				$config = Array(
+				  'protocol' => 'smtp',
+				  'smtp_host' => 'ssl://mail.zenedgesystems.co',
+				  'smtp_port' => 465,
+				  'smtp_user' => 'terminal@zenedgesystems.co', // change it to yours
+				  'smtp_pass' => 'RfqxZ9HY+IBI', // change it to yours
+				  'mailtype' => 'html',
+				  'charset' => 'iso-8859-1',
+				  'wordwrap' => TRUE
+				);
+				$UserID= $this->session->userdata('UserID');
+				$array_user = array(
+					"UserID"=>$UserID,
+					"AuthStatus"=>'1'
+				);
+				$data["otp"] = $this->users->VerifyOTP($array_user);
+				$this->load->view('mail/otp',$data);
+				$mesg = $this->load->view('mail/otp',$data,true);
+				$this->load->library('email',$config);
+				$toemail = $this->session->userdata('UserEmail');
+				$this->email->to($toemail);
+				$this->email->from('terminal@zenedgesystems.co');
+				$this->email->subject('Verification Code');
+				$this->email->message($mesg);
+				if($this->email->send())
+			    {
+			    	 echo 'Email sent.';
+			    }
+			     else
+			    {
+			     show_error($this->email->print_debugger());
+			    }
 				redirect('login/auth','refresh');
 			}
 			

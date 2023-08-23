@@ -45,32 +45,54 @@
                                                 <form id="" method="post" action="<?=base_url()?>users/process">
                                                     <div class="row">
                                                         <div class="col-md-5 mb-3">
-                                                            <input name="UserFirstName" onkeyup="generate_userName()" class="form-control" id="UserFirstName" placeholder="First Name" type="text">
+                                                            <input required name="UserFirstName" onkeyup="generate_userName()" class="form-control" id="UserFirstName" placeholder="First Name" type="text">
                                                         </div>
                                                         <div class="col-md-5 mb-3">
-                                                            <input name="UserLastName" onkeyup="generate_userName()" class="form-control" id="UserLastName" placeholder="Last Name" type="text">
+                                                            <input required name="UserLastName" onkeyup="generate_userName()" class="form-control" id="UserLastName" placeholder="Last Name" type="text">
                                                         </div>
                                                         <div class="col-md-5 mb-3">
-                                                            <input onkeyup="verifyUserName()" name="UserName" id="UserName" class="form-control" placeholder="User Name" type="text">
+                                                            <input required onkeyup="verifyUserName()" name="UserName" id="UserName" class="form-control" placeholder="User Name" type="text">
                                                             <div class="invalid-feedback">User Name Already Exists.</div>
                                                         </div>
                                                         <div class="col-md-5 mb-3">
-                                                            <input name="UserPass" class="form-control" placeholder="Password" type="password">
+                                                            <input required name="UserPass" class="form-control" placeholder="Password" type="password">
                                                         </div>
                                                         <div class="col-md-5 mb-3">
-                                                            <input name="UserEmail" class="form-control" placeholder="Email" type="email">
+                                                            <input required name="UserEmail" class="form-control" placeholder="Email" type="email">
                                                         </div>
                                                         <div class="col-md-5 mb-3">
-                                                            <input name="UserNumber" class="form-control" placeholder="Phone Numver" type="text">
+                                                            <input required name="UserNumber" class="form-control" placeholder="Phone Numver" type="text">
                                                         </div>
                                                         <div class="col-md-5 mb-3">
-                                                            <input name="UserRole" class="form-control" placeholder="Role" type="text">
+                                                            <select name="UserRole" required class="form-control">
+                                                                <option value="0">Select Role</option>
+                                                                <?php 
+                                                                foreach($allroles as $roles){
+                                                                ?>
+                                                                <option value="<?=$roles["RoleID"]?>"><?=$roles["RoleName"]?></option>
+                                                                <?php
+                                                                }
+                                                                ?>
+                                                            </select>
                                                         </div>
                                                         <div class="col-md-5 mb-3">
-                                                            <input name="UserType" class="form-control" placeholder="Type" type="text">
+                                                            <select name="UserType" required class="form-control">
+                                                                <option value="0">Select Type</option>
+                                                                <option value="Front">Front</option>
+                                                                <option value="Upsell">Upsell</option>
+                                                            </select>
                                                         </div>
                                                         <div class="col-md-5 mb-3">
-                                                            <input name="UserLead" class="form-control" placeholder="Team Lead" type="text">
+                                                            <select name="UserLead" required class="form-control">
+                                                                <option value="0">Select Team Lead</option>
+                                                                <?php 
+                                                                foreach($allusers as $users){
+                                                                ?>
+                                                                <option value="<?=$users["usersID"]?>"><?=$users["UserFirstName"].' '.$users["UserLastName"]?></option>
+                                                                <?php
+                                                                }
+                                                                ?>
+                                                            </select>
                                                         </div>
                                                     </div>
                                                     <button style="width:100%;" class="btn ripple btn-primary">Submit</button>

@@ -53,10 +53,12 @@ class Users extends CI_Controller {
 		$this->load->view('include/footer');*/
 	}
 	public function create(){
+		$data["allroles"] = $this->roles->allroles();
+		$data["allusers"] = $this->users->getallUsers();
 		$this->load->view('include/header');
 		$this->load->view('include/switcher');
 		$this->load->view('include/side-menu');
-		$this->load->view('users/create');
+		$this->load->view('users/create',$data);
 		$this->load->view('include/footer');
 	}
 	public function verifyuserNames(){

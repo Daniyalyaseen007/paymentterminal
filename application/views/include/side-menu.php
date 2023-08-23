@@ -395,6 +395,9 @@
                                 <li class="sub-category">
                                     <h3>Main</h3>
                                 </li>
+                                <?php 
+                                if($_SESSION["UserRole"]==1){
+                                ?>
                                 <li class="slide">
                                     <a class="side-menu__item has-link active" href="<?=base_url()?>">
                                         <i class="side-menu__icon ri-home-4-line"></i>
@@ -471,6 +474,142 @@
                                         </li>
                                     </ul>
                                 </li>
+                                <?php
+                                }
+                                else if($_SESSION["UserRole"]==2){
+                                ?>
+                                <li class="slide">
+                                    <a class="side-menu__item has-link active" href="<?=base_url()?>">
+                                        <i class="side-menu__icon ri-home-4-line"></i>
+                                        <span class="side-menu__label">Dashboard</span>
+                                    </a>
+                                </li>
+                                <li class="slide">
+                                    <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)">
+                                        <i class="side-menu__icon mdi mdi-cash-multiple"></i>
+                                        <span class="side-menu__label">Payments</span>
+                                        <i class="angle fe fe-chevron-right"></i>
+                                    </a>
+                                    <ul class="slide-menu">
+                                        <li class="panel sidetab-menu">
+                                            <div class="panel-body tabs-menu-body p-0 border-0">
+                                                <div class="tab-content">
+                                                    <div class="tab-pane active" id="side5">
+                                                        <ul class="sidemenu-list">
+                                                            <li class="side-menu-label1"><a href="javascript:void(0)">All Payments</a></li>
+                                                            <li><a href="https://laravelui.spruko.com/sparic/cards" class="slide-item"> All Payments</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="slide">
+                                    <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)">
+                                        <i class="side-menu__icon fa fa-file-pdf-o"></i>
+                                        <span class="side-menu__label">Invoice Link</span>
+                                        <i class="angle fe fe-chevron-right"></i>
+                                    </a>
+                                    <ul class="slide-menu">
+                                        <li class="panel sidetab-menu">
+                                            <div class="panel-body tabs-menu-body p-0 border-0">
+                                                <div class="tab-content">
+                                                    <div class="tab-pane active" id="side5">
+                                                        <ul class="sidemenu-list">
+                                                            <li class="side-menu-label1"><a href="javascript:void(0)">All Payments</a></li>
+                                                            <li><a href="<?=base_url()?>links/list" class="slide-item"> All Links</a></li>
+                                                            <li><a href="<?=base_url()?>links/create" class="slide-item"> Create New Link</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="slide">
+                                    <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)">
+                                        <i class="side-menu__icon fa fa-gear"></i>
+                                        <span class="side-menu__label">Settings</span>
+                                        <i class="angle fe fe-chevron-right"></i>
+                                    </a>
+                                    <ul class="slide-menu">
+                                        <li class="panel sidetab-menu">
+                                            <div class="panel-body tabs-menu-body p-0 border-0">
+                                                <div class="tab-content">
+                                                    <div class="tab-pane active" id="side5">
+                                                        <ul class="sidemenu-list">
+                                                            <li class="side-menu-label1"><a href="javascript:void(0)">All Payments</a></li>
+                                                            <li><a href="<?=base_url()?>merchants/list" class="slide-item"> All Merchants</a></li>
+                                                            <li><a href="<?=base_url()?>brands/list" class="slide-item"> All Brands</a></li>
+                                                            <li><a href="<?=base_url()?>services/list" class="slide-item"> All Services</a></li>
+                                                            <li><a href="<?=base_url()?>roles/list" class="slide-item"> All Roles</a></li>
+                                                            <li><a href="<?=base_url()?>permission/list" class="slide-item"> All Permission</a></li>
+                                                            <li><a href="<?=base_url()?>ips/list" class="slide-item"> All IP's</a></li>
+                                                            <li><a href="<?=base_url()?>users/list" class="slide-item"> All Users</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <?php
+                                }
+                                else if($_SESSION["UserRole"]==3){
+                                ?>
+                                <li class="slide">
+                                    <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)">
+                                        <i class="side-menu__icon fa fa-file-pdf-o"></i>
+                                        <span class="side-menu__label">Invoice Link</span>
+                                        <i class="angle fe fe-chevron-right"></i>
+                                    </a>
+                                    <ul class="slide-menu">
+                                        <li class="panel sidetab-menu">
+                                            <div class="panel-body tabs-menu-body p-0 border-0">
+                                                <div class="tab-content">
+                                                    <div class="tab-pane active" id="side5">
+                                                        <ul class="sidemenu-list">
+                                                            <li class="side-menu-label1"><a href="javascript:void(0)">All Payments</a></li>
+                                                            <li><a href="<?=base_url()?>links/list" class="slide-item"> All Links</a></li>
+                                                            <li><a href="<?=base_url()?>links/create" class="slide-item"> Create New Link</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <?php
+                                }
+                                else if($_SESSION["UserRole"]==4){
+                                ?>
+                                <li class="slide">
+                                    <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)">
+                                        <i class="side-menu__icon fa fa-file-pdf-o"></i>
+                                        <span class="side-menu__label">Invoice Link</span>
+                                        <i class="angle fe fe-chevron-right"></i>
+                                    </a>
+                                    <ul class="slide-menu">
+                                        <li class="panel sidetab-menu">
+                                            <div class="panel-body tabs-menu-body p-0 border-0">
+                                                <div class="tab-content">
+                                                    <div class="tab-pane active" id="side5">
+                                                        <ul class="sidemenu-list">
+                                                            <li class="side-menu-label1"><a href="javascript:void(0)">All Payments</a></li>
+                                                            <li><a href="<?=base_url()?>links/list" class="slide-item"> All Links</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <?php
+                                }
+                                ?>
+                                
+                                
                                 
                             </ul>
                             <div class="slide-right" id="slide-right"><svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191"

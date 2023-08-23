@@ -13,3 +13,6 @@ charset = utf-8
 
 # Tab indentation (no size specified)
 indent_style = tab
+
+application/config/config.php
+application/config/database.php

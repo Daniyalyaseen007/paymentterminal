@@ -150,6 +150,19 @@ class Api extends CI_Controller {
             echo 0;
         }
 	}
+	public function getcurrencybyid(){
+	    $CurrencyID = $_POST["CurrencyID"];
+	    $sql3 ="SELECT * FROM currency where CurrencyID='$CurrencyID'";
+        $query3 = $this->db->query($sql3);
+        $row3 = $query3->result();
+        if(!empty($row3)){
+            echo $row3[0]->CurrencySign;
+        }
+        else{
+            echo 0;
+        }
+	}
+	
 	public function getpublickey(){
 	    $token = $_POST["token"];
 	    $sql3 ="SELECT * FROM paymentlink where tokenID='$token'";

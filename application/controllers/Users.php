@@ -203,4 +203,14 @@ class Users extends CI_Controller {
 	public function welcomeemail(){
 		$mesg = $this->load->view('mail/welcome');
 	}
+	public function UserRole($Role_id=NULL){
+		$array = array("RoleID"=>$Role_id);
+		$child= $this->roles->getrole($array);
+        return $child;
+	}
+	public function UserLead($ID=null){
+		$array = array("UserID"=>$ID);
+		$child= $this->users->getUsersbyCondition($array);
+        return $child;
+	}
 }

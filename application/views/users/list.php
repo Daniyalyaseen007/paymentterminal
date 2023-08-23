@@ -45,8 +45,15 @@
                                                     <thead>
                                                         <tr>
                                                             <th class="wd-15p border-bottom-0">#</th>
-                                                            <th class="wd-15p border-bottom-0">User Full Name</th>
-                                                            <th class="wd-10p border-bottom-0">Other Details</th>
+                                                            <th class="wd-15p border-bottom-0">Full Name</th>
+                                                            <th class="wd-15p border-bottom-0">User Name</th>
+                                                            <th class="wd-15p border-bottom-0">Email</th>
+                                                            <th class="wd-15p border-bottom-0">Number</th>
+                                                            <th class="wd-15p border-bottom-0">Role</th>
+                                                            <th class="wd-15p border-bottom-0">Type</th>
+                                                            <th class="wd-15p border-bottom-0">Team Lead</th>
+                                                            <th class="wd-15p border-bottom-0">Created At</th>
+                                                            <th class="wd-25p border-bottom-0">Status</th>
                                                             <th class="wd-25p border-bottom-0">Action</th>
                                                         </tr>
                                                     </thead>
@@ -55,19 +62,40 @@
                                                             $count=0;
                                                             foreach($users as $user){
                                                             $statusbtn ='';
-                                                            // if($brand['BStatus']==0){
-                                                            //     $statusbtn = '<button class="btn btn-dager">In-Active</button>';
-                                                            // }
-                                                            // else{
-                                                            //     $statusbtn = '<button class="btn btn-info">Active</button>';
+                                                            if($user['UserStatus']==0){
+                                                                $statusbtn = '<button class="btn btn-dager">In-Active</button>';
+                                                            }
+                                                            else{
+                                                                $statusbtn = '<button class="btn btn-info">Active</button>';
 
-                                                            // }
+                                                            }
+                                                            $role = $user["UserRole"];
+                                                            $CI=&get_instance();
+                                                            $rolename = $CI->UserRole($role);
+                                                            $rolenames =$rolename[0]["RoleName"];
+
+                                                            $teamlead = '';
+                                                            if($user["UserLead"]==0){
+                                                                $teamlead = 'No Team Lead';
+                                                            }
+                                                            else{
+                                                                $UserLead = $user["UserLead"];
+                                                                $CI=&get_instance();
+                                                                $UserLeads = $CI->UserLead($UserLead);
+                                                                $teamlead =$UserLeads[0]["UserFirstName"].' '.$UserLeads[0]["UserLastName"];
+                                                            }
                                                             ?>
                                                             <tr>
                                                                 <td><?=++$count?></td>
                                                                 <td><?=$user["UserFirstName"].' '.$user["UserLastName"]?></td>
-                                                                <td></td>
-                                                                <td></td>
+                                                                <td><?=$user["UserName"]?></td>
+                                                                <td><?=$user["UserEmail"]?></td>
+                                                                <td><?=$user["UserNumber"]?></td>
+                                                                <td><?=$rolenames?></td>
+                                                                <td><?=$user["UserType"]?></td>
+                                                                <td><?=$teamlead?></td>
+                                                                <td><?=date_format(date_create($user["User_created_at"]),'d-M-Y')?></td>
+                                                                <td><?=$statusbtn?></td>
                                                             </tr>
                                                             <?php
                                                             }

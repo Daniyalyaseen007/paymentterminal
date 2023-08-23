@@ -43,6 +43,7 @@ class Roles extends CI_Controller {
 		$this->load->view('roles/list',$data);
 		$this->load->view('include/footer');
 	}
+	
 	public function create(){
 		$this->load->view('include/header');
 		$this->load->view('include/switcher');

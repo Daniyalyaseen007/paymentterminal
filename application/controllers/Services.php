@@ -24,6 +24,9 @@ class Services extends CI_Controller {
         if(!$this->session->userdata('UserID')){
 			redirect('login','refresh');
 		}
+		else if($this->session->userdata('OTPverify')==0){
+			redirect('login/auth','refresh');
+		}
 		else{
 			//redirect('dashboard','refresh');
 

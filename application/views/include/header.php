@@ -13,8 +13,8 @@
         <title> Zenedge Systems</title>
 
         <!-- FAVICON -->
-        <link rel="icon" href="<?=base_url()?>assets/images/brand/favicon.ico" type="image/x-icon" >
-        <link rel="shortcut icon" href="<?=base_url()?>assets/images/brand/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="<?=base_url()?>assets/logo/Zenedge-Systems-logo-01.png" type="image/x-icon" >
+        <link rel="shortcut icon" href="<?=base_url()?>assets/logo/Zenedge-Systems-logo-01.png" type="image/x-icon">
 
         <!-- BOOTSTRAP CSS -->
         <link id="style" href="<?=base_url()?>assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">

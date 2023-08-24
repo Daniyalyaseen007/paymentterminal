@@ -11,7 +11,7 @@
                             <div class="page-header d-sm-flex d-block">
                                 <ol class="breadcrumb mb-sm-0 mb-3">
                                     <!-- breadcrumb -->
-                                    <li class="breadcrumb-item"><a href="https://laravelui.spruko.com/sparic/index">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="<?=base_url()?>">Home</a></li>
                                     <li class="breadcrumb-item active" aria-current="page">Dashboard01</li>
                                 </ol><!-- End breadcrumb -->
                                 <div class="ms-auto">
@@ -23,7 +23,7 @@
                                                 <i class="fa fa-star"></i>
                                             </span>
                                         </a>
-                                        <a href="https://laravelui.spruko.com/sparic/lockscreen" class="btn bg-primary-transparent text-primary mx-2 btn-sm"
+                                        <a href="<?=base_url()?>" class="btn bg-primary-transparent text-primary mx-2 btn-sm"
                                             data-bs-toggle="tooltip" title="" data-bs-placement="bottom"
                                             data-bs-original-title="lock">
                                             <span>

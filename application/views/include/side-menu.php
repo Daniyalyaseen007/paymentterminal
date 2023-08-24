@@ -15,11 +15,9 @@
                             <a aria-label="Hide Sidebar" class="app-sidebar__toggle" data-bs-toggle="sidebar"
                                 href="javascript:void(0)"></a>
                             <!-- sidebar-toggle-->
-                            <a class="logo-horizontal" href="https://laravelui.spruko.com/sparic/index">
-                                <img src="https://laravelui.spruko.com/sparic/build/assets/images/brand/logo.png" class="header-brand-img main-logo"
-                                    alt="Sparic logo">
-                                <img src="https://laravelui.spruko.com/sparic/build/assets/images/brand/logo-light.png" class="header-brand-img darklogo"
-                                    alt="Sparic logo">
+                            <a class="logo-horizontal" href="<?=base_url()?>">
+                                <img src="<?=base_url()?>assets/logo/Zenedge-Systems-logo-04.png" class="header-brand-img main-logo" alt="Sparic logo">
+                                <img src="<?=base_url()?>assets/logo/Zenedge-Systems-logo-05.png" class="header-brand-img darklogo" alt="Sparic logo">
                             </a>
                             <!-- LOGO -->
                             <div class="main-header-center ms-3 d-none d-lg-block">
@@ -241,12 +239,6 @@
                                                 </div>
                                             </div>
                                             <!-- MESSAGE-BOX -->
-                                            <div class="dropdown d-flex header-settings">
-                                                <a class="nav-link icon siderbar-link" data-bs-toggle="sidebar-right"
-                                                    data-bs-target=".sidebar-right">
-                                                    <i class="ri-menu-fold-fill"></i>
-                                                </a>
-                                            </div>
                                             <!-- SIDE-MENU -->
                                             <div class="dropdown d-flex profile-1">
                                                 <a href="javascript:void(0)" data-bs-toggle="dropdown"
@@ -262,19 +254,8 @@
                                                             <span class="text-muted fs-12">Administrator</span>
                                                         </div>
                                                     </div>
-                                                    <a class="dropdown-item text-dark fw-semibold border-top" href="https://laravelui.spruko.com/sparic/profile">
+                                                    <a class="dropdown-item text-dark fw-semibold border-top" href="<?=base_url()?>user/profile">
                                                         <i class="dropdown-icon fe fe-user"></i> Profile
-                                                    </a>
-                                                    <a class="dropdown-item text-dark fw-semibold" href="https://laravelui.spruko.com/sparic/email-inbox">
-                                                        <i class="dropdown-icon fe fe-mail"></i> Inbox
-                                                        <span class="badge bg-success float-end">3</span>
-                                                    </a>
-                                                    <a class="dropdown-item text-dark fw-semibold" href="https://laravelui.spruko.com/sparic/settings">
-                                                        <i class="dropdown-icon fe fe-settings"></i> Settings
-                                                    </a>
-                                                    <a class="dropdown-item text-dark fw-semibold" href="https://laravelui.spruko.com/sparic/faq">
-                                                        <i class="dropdown-icon fe fe-alert-triangle"></i>
-                                                        Support ?
                                                     </a>
                                                     <a class="dropdown-item text-dark fw-semibold" href="<?=base_url()?>sign-out">
                                                         <i class="dropdown-icon fe fe-log-out"></i> Sign
@@ -374,15 +355,11 @@
                     <div class="app-sidebar__overlay" data-bs-toggle="sidebar"></div>
                     <div class="app-sidebar">
                         <div class="side-header">
-                            <a class="header-brand1" href="https://laravelui.spruko.com/sparic/index">
-                                <img src="https://laravelui.spruko.com/sparic/build/assets/images/brand/logo.png" class="header-brand-img main-logo"
-                                    alt="Sparic logo">
-                                <img src="https://laravelui.spruko.com/sparic/build/assets/images/brand/logo-light.png" class="header-brand-img darklogo"
-                                    alt="Sparic logo">
-                                <img src="https://laravelui.spruko.com/sparic/build/assets/images/brand/icon.png" class="header-brand-img icon-logo"
-                                    alt="Sparic logo">
-                                <img src="https://laravelui.spruko.com/sparic/build/assets/images/brand/icon2.png" class="header-brand-img icon-logo2"
-                                    alt="Sparic logo">
+                            <a class="header-brand1" href="<?=base_url()?>">
+                                <img src="<?=base_url()?>assets/logo/Zenedge-Systems-logo-04.png" class="header-brand-img main-logo" alt="Zenedge Logo">
+                                <img src="<?=base_url()?>assets/logo/Zenedge-Systems-logo-05.png" class="header-brand-img darklogo" alt="Zenedge Logo">
+                                <img src="<?=base_url()?>assets/logo/Zenedge-Systems-logo-01.png" class="header-brand-img icon-logo" alt="Zenedge Logo">
+                                <img src="<?=base_url()?>assets/logo/Zenedge-Systems-logo-01.png" class="header-brand-img icon-logo2" alt="Zenedge Logo">
                             </a>
                         </div>
                         <!-- logo-->

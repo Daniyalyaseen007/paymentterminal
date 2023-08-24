@@ -94,6 +94,9 @@
                                                             </select>
                                                         </div>
                                                         <div class="col-md-5 mb-3">
+                                                            <input name="customerName" required class="form-control" placeholder="Enter Customer Name" type="text">
+                                                        </div>
+                                                        <div class="col-md-5 mb-3">
                                                             <select name="currency" required class="form-control">
                                                                 <option value="">Select Currency</option>
                                                                 <?php 
@@ -105,15 +108,14 @@
                                                                 ?>
                                                             </select>
                                                         </div>
-                                                        <div class="col-md-5 mb-3"></div>
                                                         <div class="col-md-4 mb-3">
                                                             <input name="amount" required class="form-control" placeholder="Enter your Amount" type="number">
                                                         </div>
                                                         <div class="col-md-4 mb-3">
-                                                            <input name="remaining_amount" required class="form-control" placeholder="Enter Remaining Amount" type="number">
+                                                            <input name="remaining_amount" class="form-control" placeholder="Enter Remaining Amount" type="number">
                                                         </div>
                                                         <div class="col-md-4 mb-3">
-                                                            <input name="tax" required class="form-control" placeholder="Enter Tax in %" type="number" min="1" max="100">
+                                                            <input name="tax" class="form-control" placeholder="Enter Tax in %" type="number" min="1" max="100">
                                                         </div>
                                                         <div class="col-md-12 mb-3">
                                                             <button style="width:100%;" type="submit" class="btn ripple btn-primary">Submit</button>  

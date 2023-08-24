@@ -49,6 +49,7 @@
                                                             <th class="wd-20p border-bottom-0">Brand Name</th>
                                                             <th class="wd-20p border-bottom-0">Service Name</th>
                                                             <th class="wd-20p border-bottom-0">Agent Name</th>
+                                                            <th class="wd-20p border-bottom-0">Customer Name</th>
                                                             <th class="wd-20p border-bottom-0">Amount</th>
                                                             <th class="wd-20p border-bottom-0">Tax</th>
                                                             <th class="wd-20p border-bottom-0">Remaining</th>
@@ -78,6 +79,8 @@
                                                                 <td><?=$link["BrandName"]?></td>
                                                                 <td><?=$link["ServiceName"]?></td>
                                                                 <td><?=$link["UserFirstName"].' '.$link["UserLastName"]?></td>
+                                                                <td><?=$link["customerName"]?></td>
+                                                                
                                                                 <td><?=number_format($link["amount"],2).' '.$link["CurrencySign"]?></td>
                                                                 <td><?=number_format($link["tax"],2).' %'?></td>
                                                                 <td><?=number_format($link["remaining_amount"],2).' '.$link["CurrencySign"]?></td>

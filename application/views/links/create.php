@@ -112,10 +112,10 @@
                                                             <input name="amount" required class="form-control" placeholder="Enter your Amount" type="number">
                                                         </div>
                                                         <div class="col-md-4 mb-3">
-                                                            <input name="remaining_amount" class="form-control" placeholder="Enter Remaining Amount" type="number">
+                                                            <input value="0" name="remaining_amount" class="form-control" placeholder="Enter Remaining Amount" type="number">
                                                         </div>
                                                         <div class="col-md-4 mb-3">
-                                                            <input name="tax" class="form-control" placeholder="Enter Tax in %" type="number" min="1" max="100">
+                                                            <input name="tax" value="0" class="form-control" placeholder="Enter Tax in %" type="number" min="0" max="100">
                                                         </div>
                                                         <div class="col-md-12 mb-3">
                                                             <button style="width:100%;" type="submit" class="btn ripple btn-primary">Submit</button>  

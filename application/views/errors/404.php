@@ -5,12 +5,12 @@
         <!-- META DATA -->
         <meta charset="UTF-8">
         <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <meta name="Description" content="Sparic - Laravel Multipurpose Responsive Bootstrap5 Dashboard Template">
-        <meta name="Author" content="Spruko Technologies Private Limited">
-        <meta name="keywords" content="admin dashboard, admin dashboard laravel, admin panel template, blade template, blade template laravel, bootstrap template, dashboard laravel, laravel admin, laravel admin dashboard, laravel admin panel, laravel admin template, laravel bootstrap admin template, laravel bootstrap template, laravel template, vite laravel template, vite admin template, vite laravel admin, vite laravel admin dashboard, vite laravel bootstrap admin template">
+        <meta name="Description" content="">
+        <meta name="Author" content="">
+        <meta name="keywords" content="">
 
         <!-- TITLE -->
-        <title> Sparic - Laravel Multipurpose Responsive Bootstrap5 Dashboard Template</title>
+        <title> Zenedge System</title>
 
         <!-- FAVICON -->
         <link rel="icon" href="<?=base_url()?>assets/images/brand/favicon.ico" type="image/x-icon" >

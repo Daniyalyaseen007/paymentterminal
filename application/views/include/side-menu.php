@@ -417,7 +417,7 @@
                                                     <div class="tab-pane active" id="side5">
                                                         <ul class="sidemenu-list">
                                                             <li class="side-menu-label1"><a href="javascript:void(0)">All Payments</a></li>
-                                                            <li><a href="https://laravelui.spruko.com/sparic/cards" class="slide-item"> All Payments</a></li>
+                                                            <li><a href="<?=base_url()?>payments/list" class="slide-item"> All Payments</a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -497,7 +497,7 @@
                                                     <div class="tab-pane active" id="side5">
                                                         <ul class="sidemenu-list">
                                                             <li class="side-menu-label1"><a href="javascript:void(0)">All Payments</a></li>
-                                                            <li><a href="https://laravelui.spruko.com/sparic/cards" class="slide-item"> All Payments</a></li>
+                                                            <li><a href="<?=base_url()?>payments/list" class="slide-item"> All Payments</a></li>
                                                         </ul>
                                                     </div>
                                                 </div>

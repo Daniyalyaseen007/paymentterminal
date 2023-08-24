@@ -88,4 +88,13 @@ class Links extends CI_Controller {
 		$this->load->view('links/list',$data);
 		$this->load->view('include/footer');
 	}
+	public function paid_list($slug=null){
+		$data["links"] 	= $this->links->allpaidlinkswithjoin();
+		$data["slug"] 		= $slug;
+		$this->load->view('include/header');
+		$this->load->view('include/switcher');
+		$this->load->view('include/side-menu');
+		$this->load->view('links/list',$data);
+		$this->load->view('include/footer');
+	}
 }

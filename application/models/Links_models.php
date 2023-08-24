@@ -33,5 +33,25 @@ class Links_models extends CI_Model {
 	        return false;
 	    }
 	}
+	public function allpaidlinkswithjoin(){
+		$this->db->select('*');
+		$this->db->from('paymentlink a');
+		$this->db->join('merchant b','b.MerchantID=a.merchant');
+		$this->db->join('brands c','c.BrandID=a.brand');
+		$this->db->join('usersdetails d','d.usersID=a.agent');
+		$this->db->join('services e','e.ServiceID=a.services');
+		$this->db->join('currency f','f.CurrencyID=a.currency');
+		$this->db->where("a.LinkStatus","1");
+		$this->db->order_by('a.PaymentID','DESC');
+		$q = $this->db->get();
+		if($q->num_rows() != 0)
+	    {
+	        return $q->result_array();
+	    }
+	    else
+	    {
+	        return false;
+	    }
+	}
 }
 ?>

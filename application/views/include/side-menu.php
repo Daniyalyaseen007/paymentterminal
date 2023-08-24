@@ -416,6 +416,7 @@
                                                         <ul class="sidemenu-list">
                                                             <li class="side-menu-label1"><a href="javascript:void(0)">All Payments</a></li>
                                                             <li><a href="<?=base_url()?>links/list" class="slide-item"> All Links</a></li>
+                                                            <li><a href="<?=base_url()?>links/paid-list" class="slide-item"> Paid Links</a></li>
                                                             <li><a href="<?=base_url()?>links/create" class="slide-item"> Create New Link</a></li>
                                                         </ul>
                                                     </div>

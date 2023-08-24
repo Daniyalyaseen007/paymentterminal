@@ -73,6 +73,11 @@ $route['login/error/(:any)'] = 'Login/error/$1';
 
 
 $route['links/create'] = 'Links/create';
+$route['links/paid-list'] = 'Links/paid_list';
+
+
+
+
 $route['forgot-password'] = 'Login/forgot_password';
 
 $route['forgot-password/otp'] = 'Login/forgot_otp';

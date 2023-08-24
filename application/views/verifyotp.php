@@ -55,10 +55,8 @@
                                         <div class="card-body">
                                             <div class="text-center mb-3">
                                                 <a class="header-brand1" href="https://laravelui.spruko.com/sparic/index">
-                                                    <img src="https://laravelui.spruko.com/sparic/build/assets/images/brand/logo.png"
-                                                        class="header-brand-img main-logo" alt="Sparic logo">
-                                                    <img src="https://laravelui.spruko.com/sparic/build/assets/images/brand/logo-light.png"
-                                                        class="header-brand-img darklogo" alt="Sparic logo">
+                                                    <img src="<?=base_url()?>assets/logo/Zenedge-Systems-logo-04.png" class="header-brand-img main-logo" alt="Sparic logo">
+                                                    <img src="<?=base_url()?>assets/logo/Zenedge-Systems-logo-05.png" class="header-brand-img darklogo" alt="Sparic logo">
                                                 </a>
                                             </div>
                                             <div class="text-center mb-4 ">

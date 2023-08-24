@@ -146,4 +146,106 @@ class Login extends CI_Controller {
 			$this->load->view('auth',$data);
 		}
 	}
+	public function forgot_password($slug=null){
+		if(isset($_GET["invalid-user"])){
+			$data["error"] = $_GET;
+			$this->load->view('forget-form',$data);
+		}
+		else{
+			$this->load->view('forget-form');
+		}
+		
+	}
+	public function mailtoforget(){
+		$email = $_POST["Email"];
+		$condition = array("UserEmail"=>$email);
+		$data["user"] = $this->users->getUsersbyCondition($condition);
+		if(!empty($data["user"])){
+			$this->load->helper('string');
+			$otpcode = random_string('alnum', 6);
+			$UserID= $data["user"][0]['UserID'];
+			$arrayotp = array(
+				"UserID"=>$UserID,
+				"AuthCode"=>$otpcode,
+				"AuthStatus"=>'1'
+			);
+			$this->db->insert("otp_auth_forget",$arrayotp);
+			$insertid= $this->db->insert_id();
+			if($insertid>0){
+				$config = Array(
+				  'protocol' => 'smtp',
+				  'smtp_host' => 'ssl://mail.zenedgesystems.co',
+				  'smtp_port' => 465,
+				  'smtp_user' => 'terminal@zenedgesystems.co', // change it to yours
+				  'smtp_pass' => 'RfqxZ9HY+IBI', // change it to yours
+				  'mailtype' => 'html',
+				  'charset' => 'iso-8859-1',
+				  'wordwrap' => TRUE
+				);
+				$array_user = array(
+					"UserID"=>$UserID,
+					"AuthStatus"=>'1'
+				);
+				$_SESSION["OTPUser"] = $UserID;
+				$data["otp"] = $this->users->VerifyForgetOTP($array_user);
+				$this->load->view('mail/otp',$data);
+				$mesg = $this->load->view('mail/otp',$data,true);
+				$this->load->library('email',$config);
+				$toemail = $data["user"][0]['UserEmail'];
+				$this->email->to($toemail);
+				$this->email->from('terminal@zenedgesystems.co');
+				$this->email->subject('Verification Code');
+				$this->email->message($mesg);
+				if($this->email->send())
+			    {
+			    	redirect('forgot-password/otp','refresh');
+			    }
+			     else
+			    {
+			     show_error($this->email->print_debugger());
+			    }
+			}
+			//die();
+			//
+		}
+		else{
+			redirect('forgot-password/error?invalid-user','refresh');
+		}
+		//getUsersbyCondition
+	}
+	public function forgot_otp(){
+		$this->load->view('verifyotp');
+	}
+	public function verifyforgetotps(){
+		$UserID= $_SESSION["OTPUser"];
+		$array_user = array(
+				"UserID"=>$UserID,
+				"AuthCode"=>$_POST["AuthCode"],
+				"AuthStatus"=>'1'
+			);
+		$users = $this->users->VerifyForgetOTP($array_user);
+		if(empty($users)){
+			echo "Invalid OTP";
+			//redirect('login/error/otp-failed','refresh');
+			//$_SESSION["OTPverify"] = 0;
+		}
+		else{
+			$this->load->view('forget-pass');
+
+			//$_SESSION["OTPverify"] = 1;
+			//redirect('dashboard','refresh');
+		}
+	}
+	public function changepassword(){
+		//password
+		$UserID= $_SESSION["OTPUser"];
+		$array = array("UserPass"=>md5($_POST["password"]));
+		$update_otp = $this->users->updateUser($array,$UserID);
+		$array2 = array("AuthStatus"=>'0');
+		$update_otp2 = $this->users->updateOTP2($array2,$UserID);
+		$this->output->set_header("Cache-Control: no-store, no-cache, must-revalidate, no-transform, max-age=0, post-check=0, pre-check=0");
+        $this->output->set_header("Pragma: no-cache");
+        $this->session->sess_destroy();
+		redirect('main','refresh');
+	}
 }

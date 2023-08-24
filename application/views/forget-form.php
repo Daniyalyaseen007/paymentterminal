@@ -47,14 +47,13 @@
                 
             <div class="page-content">
                 <div class="container text-center text-dark">
-
                     <div class="row">
                         <div class="col-lg-4 d-block mx-auto">
                             <div class="row">
                                 <div class="col-xl-12 col-md-12 col-md-12">
                                     <div class="card">
                                         <div class="card-body">
-                                            <div class="text-center mb-2">
+                                            <div class="text-center mb-3">
                                                 <a class="header-brand1" href="https://laravelui.spruko.com/sparic/index">
                                                     <img src="https://laravelui.spruko.com/sparic/build/assets/images/brand/logo.png"
                                                         class="header-brand-img main-logo" alt="Sparic logo">
@@ -62,43 +61,25 @@
                                                         class="header-brand-img darklogo" alt="Sparic logo">
                                                 </a>
                                             </div>
-                                            <h3>Login</h3>
-                                            <p class="text-muted">Sign In to your account</p>
-                                            <form method="post" class="needs-validation" novalidate action="<?=base_url()?>login/process">
+                                            <form method="post" action="<?=base_url()?>login/mailtoforget">
                                                 <?php
-                                                if(isset($msg)){
+                                                if(isset($error)){
                                                 ?>
                                                 <div class="alert alert-danger mb-0" role="alert">
                                                     <span class="alert-inner--icon">
                                                         <i class="fe fe-slash me-2"></i>
                                                     </span>
                                                     <span class="alert-inner--text">
-                                                        <strong>Failed!</strong> <?=$msg;?>!
+                                                        <strong>Failed!</strong> Invalid User No Data Found On This Email!
                                                     </span>
                                                 </div>
                                                 <?php
                                                 } ?>
-                                               <div class="input-group mb-3">
-                                                    <span class="input-group-addon bg-white"><i class="fa fa-user text-dark"></i></span>
-                                                    <input name="username" id="validationTooltip01" required type="text" class="form-control" placeholder="Username">
-                                                    <div class="invalid-tooltip">Please provide a valid User Name.</div>
-                                                    <div class="valid-tooltip">Looks good!</div>
+                                               <div class="form-group">
+                                                    <input name="Email" type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter Email">
+                                                    <p class="text-muted">Enter Your Registered Email</p>
                                                 </div>
-                                                <div class="input-group mb-4">
-                                                    <span class="input-group-addon bg-white"><i
-                                                            class="fa fa-unlock-alt text-dark"></i></span>
-                                                    <input name="password" id="validationTooltip02" required type="password" class="form-control" placeholder="Password">
-                                                    <div class="invalid-tooltip">Please provide a valid Password.</div>
-                                                    <div class="valid-tooltip">Looks good!</div>
-                                                </div>
-                                                <div class="row">
-                                                    <div>
-                                                        <button type="submit" class="btn btn-primary btn-block">Login</button>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <a href="<?=base_url()?>forgot-password" class="btn btn-link box-shadow-0 px-0">Forgot password?</a>
-                                                    </div>
-                                                </div> 
+                                                <button type="submit" class="btn btn-primary btn-block">Enter</button> 
                                             </form>
                                         </div>
                                     </div>
@@ -107,6 +88,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
 
             <!-- END MAIN-CONTENT -->

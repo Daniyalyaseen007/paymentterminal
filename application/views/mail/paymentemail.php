@@ -220,7 +220,7 @@ table, td { color: #000000; } #u_body a { color: #0000ee; text-decoration: under
           <td style="overflow-wrap:break-word;word-break:break-word;padding:8px 15px 8px;font-family:arial,helvetica,sans-serif;background-color:#3c82f25d;border-right:7px solid #2C2CFE;" align="center">
 
       <div style="font-size: 14px; line-height: 140%; text-align: left; word-wrap: break-word;">
-        <p style="font-size: 14px; line-height:1;font-family: poppins;font-weight: 500;color:#464646"><?=$links[0]->LinkCreatedat;?></p>
+        <p style="font-size: 14px; line-height:1;font-family: poppins;font-weight: 500;color:#464646"><?=$links[0]['LinkCreatedat'];?></p>
       </div>
 
           </td>
@@ -342,7 +342,7 @@ table, td { color: #000000; } #u_body a { color: #0000ee; text-decoration: under
               <td style="overflow-wrap:break-word;word-break:break-word;padding:8px 15px 8px;font-family:arial,helvetica,sans-serif;background-color:#3c82f25d;border-right:7px solid #2C2CFE;" align="center">
 
           <div style="font-size: 14px; line-height: 140%; text-align: left; word-wrap: break-word;">
-            <p style="font-size: 14px; line-height:1;font-family: poppins;font-weight: 500;color:#464646"><?=$links[0]->BrandName;?></p>
+            <p style="font-size: 14px; line-height:1;font-family: poppins;font-weight: 500;color:#464646"><?=$links[0]['BrandName'];?></p>
           </div>
 
               </td>
@@ -403,7 +403,7 @@ table, td { color: #000000; } #u_body a { color: #0000ee; text-decoration: under
                 <td style="overflow-wrap:break-word;word-break:break-word;padding:8px 15px 8px;font-family:arial,helvetica,sans-serif;background-color:#3c82f25d;border-right:7px solid #2C2CFE;" align="center">
 
             <div style="font-size: 14px; line-height: 140%; text-align: left; word-wrap: break-word;">
-              <p style="font-size: 14px; line-height:1;font-family: poppins;font-weight: 500;color:#464646"><?=$links[0]->ServiceName;?></p>
+              <p style="font-size: 14px; line-height:1;font-family: poppins;font-weight: 500;color:#464646"><?=$links[0]['ServiceName'];?></p>
             </div>
 
                 </td>
@@ -464,7 +464,7 @@ table, td { color: #000000; } #u_body a { color: #0000ee; text-decoration: under
                   <td style="overflow-wrap:break-word;word-break:break-word;padding:8px 15px 8px;font-family:arial,helvetica,sans-serif;background-color:#3c82f25d;border-right:7px solid #2C2CFE;" align="center">
 
               <div style="font-size: 14px; line-height: 140%; text-align: left; word-wrap: break-word;">
-                <p style="font-size: 14px; line-height:1;font-family: poppins;font-weight: 500;color:#464646"><?=$links[0]->UserFirstName.' '.$links[0]->UserLastName;?></p>
+                <p style="font-size: 14px; line-height:1;font-family: poppins;font-weight: 500;color:#464646"><?=$links[0]['UserFirstName'].' '.$links[0]['UserLastName'];?></p>
               </div>
 
                   </td>
@@ -525,7 +525,7 @@ table, td { color: #000000; } #u_body a { color: #0000ee; text-decoration: under
                     <td style="overflow-wrap:break-word;word-break:break-word;padding:8px 15px 8px;font-family:arial,helvetica,sans-serif;background-color:#3c82f25d;border-right:7px solid #2C2CFE;" align="center">
 
                 <div style="font-size: 14px; line-height: 140%; text-align: left; word-wrap: break-word;">
-                  <p style="font-size: 14px; line-height:1;font-family: poppins;font-weight: 500;color:#464646"><?=$links[0]->customerName;?></p>
+                  <p style="font-size: 14px; line-height:1;font-family: poppins;font-weight: 500;color:#464646"><?=$links[0]['customerName'];?></p>
                 </div>
 
                     </td>
@@ -586,7 +586,7 @@ table, td { color: #000000; } #u_body a { color: #0000ee; text-decoration: under
                       <td style="overflow-wrap:break-word;word-break:break-word;padding:8px 15px 8px;font-family:arial,helvetica,sans-serif;background-color:#3c82f25d;border-right:7px solid #2C2CFE;" align="center">
 
                   <div style="font-size: 14px; line-height: 140%; text-align: left; word-wrap: break-word;">
-                    <p style="font-size: 14px; line-height:1;font-family: poppins;font-weight: 500;color:#464646"><?=$links[0]->CustomerEmail;?></p>
+                    <p style="font-size: 14px; line-height:1;font-family: poppins;font-weight: 500;color:#464646"><?=$links[0]['CustomerEmail'];?></p>
                   </div>
 
                       </td>
@@ -708,7 +708,7 @@ table, td { color: #000000; } #u_body a { color: #0000ee; text-decoration: under
                           <td style="overflow-wrap:break-word;word-break:break-word;padding:8px 15px 8px;font-family:arial,helvetica,sans-serif;background-color:#3c82f25d;border-right:7px solid #2C2CFE;" align="center">
 
                       <div style="font-size: 14px; line-height: 140%; text-align: left; word-wrap: break-word;">
-                        <p style="font-size: 14px; line-height:1;font-family: poppins;font-weight: 600;color:black"><?=$links[0]->CurrencySign.' '.$links[0]->amount;?></p>
+                        <p style="font-size: 14px; line-height:1;font-family: poppins;font-weight: 600;color:black"><?=$links[0]['CurrencySign'].' '.$links[0]['amount'];?></p>
                       </div>
 
                           </td>

@@ -222,8 +222,7 @@ class Api extends CI_Controller {
 	  echo $this->db->last_query();
 	}
 	public function sendemail(){
-		die();
-	    $config = Array(
+		$config = Array(
 		  'protocol' => 'mail',
 		  'smtp_host' => 'ssl://mail.zenedgesystems.co',
 		  'smtp_port' => 465,

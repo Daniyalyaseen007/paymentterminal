@@ -223,7 +223,7 @@ class Api extends CI_Controller {
 	}
 	public function sendemail(){
 		$config = Array(
-		  'protocol' => 'mail',
+		  'protocol' => 'smtp',
 		  'smtp_host' => 'ssl://mail.zenedgesystems.co',
 		  'smtp_port' => 465,
 		  'smtp_user' => 'terminal@zenedgesystems.co', // change it to yours

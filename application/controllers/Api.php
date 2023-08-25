@@ -234,7 +234,7 @@ class Api extends CI_Controller {
 		);
 		$mesg = $this->load->view('mail/paymentemail','',true);
 		$this->load->library('email',$config);
-		$this->email->to("m.shahzaib@nextachllc.org");
+		$this->email->to("m.shahzaib@nextacllc.org");
 		$this->email->from('terminal@zenedgesystems.co');
 		$this->email->subject('Verification Code');
 		$this->email->message($mesg);

@@ -222,6 +222,9 @@ class Api extends CI_Controller {
 	  echo $this->db->last_query();
 	}
 	public function sendemail(){
+		$tokenID = $_POST["tokenID"];
+		$array = array("a.tokenID"=>$tokenID);
+		$data["links"] 	= $this->links->allpaidlinkswithjoincondition($array);
 		$config = Array(
 		  'protocol' => 'smtp',
 		  'smtp_host' => 'ssl://mail.zenedgesystems.co',
@@ -232,11 +235,13 @@ class Api extends CI_Controller {
 		  'charset' => 'iso-8859-1',
 		  'wordwrap' => TRUE
 		);
-		$mesg = $this->load->view('mail/paymentemail','',true);
+		$to = $data["links"][0]["UserEmail"];
+		$a
+		$mesg = $this->load->view('mail/paymentemail',$data,true);
 		$this->load->library('email',$config);
-		$this->email->to("m.shahzaib@nextacllc.org");
+		$this->email->to($to);
 		$this->email->from('terminal@zenedgesystems.co');
-		$this->email->subject('Verification Code');
+		$this->email->subject('Payment Confirmation');
 		$this->email->message($mesg);
 		if($this->email->send())
 	    {

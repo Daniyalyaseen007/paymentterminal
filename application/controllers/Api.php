@@ -236,12 +236,11 @@ class Api extends CI_Controller {
 		  'wordwrap' => TRUE
 		);
 		$to = $data["links"][0]["UserEmail"];
-		$a
 		$mesg = $this->load->view('mail/paymentemail',$data,true);
 		$this->load->library('email',$config);
 		$this->email->to($to);
 		$this->email->from('terminal@zenedgesystems.co');
-		$this->email->subject('Payment Confirmation');
+		$this->email->subject('Payment Confirm');
 		$this->email->message($mesg);
 		if($this->email->send())
 	    {

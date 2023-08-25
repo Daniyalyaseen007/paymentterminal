@@ -66,7 +66,8 @@ class Links extends CI_Controller {
 				"LinkStatus"=>0,
 				"tokenID"=>$tokenid,
 				"paymentLink"=>$link."".$tokenid,
-				"customerName"=>$_POST["customerName"]
+				"customerName"=>$_POST["customerName"],
+				"source"=>$_POST["source"]
 			);
 		$this->db->insert("paymentlink",$array);
 		$insertid= $this->db->insert_id();

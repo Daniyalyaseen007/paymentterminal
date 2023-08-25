@@ -84,6 +84,8 @@ $route['forgot-password/otp'] = 'Login/forgot_otp';
 
 $route['forgot-password/(:any)'] = 'Login/forgot_password';
 
+$route['reports/sales-sheet'] = 'Report/sales_sheet';
+
 
 
 

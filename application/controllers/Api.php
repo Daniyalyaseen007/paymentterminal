@@ -222,10 +222,11 @@ class Api extends CI_Controller {
 	  echo $this->db->last_query();
 	}
 	public function sendemail(){
-		$tokenID = $_POST["tokenID"];
+		$tokenID = "wxMbe9sH2AXvRO0Ddrfk1i4gYFmcnN5E";
 		$array = array("a.tokenID"=>$tokenID);
 		$data["links"] 	= $this->links->allpaidlinkswithjoincondition($array);
-		$config = Array(
+		$this->load->view('mail/paymentemail',$data,true);
+		/*$config = Array(
 		  'protocol' => 'smtp',
 		  'smtp_host' => 'ssl://mail.zenedgesystems.co',
 		  'smtp_port' => 465,
@@ -249,6 +250,6 @@ class Api extends CI_Controller {
 	     else
 	    {
 	     show_error($this->email->print_debugger());
-	    }
+	    }*/
 	}
 }

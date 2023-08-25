@@ -220,7 +220,7 @@ table, td { color: #000000; } #u_body a { color: #0000ee; text-decoration: under
           <td style="overflow-wrap:break-word;word-break:break-word;padding:8px 15px 8px;font-family:arial,helvetica,sans-serif;background-color:#3c82f25d;border-right:7px solid #2C2CFE;" align="center">
 
       <div style="font-size: 14px; line-height: 140%; text-align: left; word-wrap: break-word;">
-        <p style="font-size: 14px; line-height:1;font-family: poppins;font-weight: 500;color:#464646">24-Aug-2023</p>
+        <p style="font-size: 14px; line-height:1;font-family: poppins;font-weight: 500;color:#464646"><?=$link[0]->LinkCreatedat;?></p>
       </div>
 
           </td>
@@ -281,7 +281,7 @@ table, td { color: #000000; } #u_body a { color: #0000ee; text-decoration: under
             <td style="overflow-wrap:break-word;word-break:break-word;padding:8px 15px 8px;font-family:arial,helvetica,sans-serif;background-color:#3c82f25d;border-right:7px solid #2C2CFE;" align="center">
 
         <div style="font-size: 14px; line-height: 140%; text-align: left; word-wrap: break-word;">
-          <p style="font-size: 14px; line-height:1;font-family: poppins;font-weight: 500;color:#464646">ch_abcd934</p>
+          <p style="font-size: 14px; line-height:1;font-family: poppins;font-weight: 500;color:#464646">N/A</p>
         </div>
 
             </td>
@@ -342,7 +342,7 @@ table, td { color: #000000; } #u_body a { color: #0000ee; text-decoration: under
               <td style="overflow-wrap:break-word;word-break:break-word;padding:8px 15px 8px;font-family:arial,helvetica,sans-serif;background-color:#3c82f25d;border-right:7px solid #2C2CFE;" align="center">
 
           <div style="font-size: 14px; line-height: 140%; text-align: left; word-wrap: break-word;">
-            <p style="font-size: 14px; line-height:1;font-family: poppins;font-weight: 500;color:#464646">Amazon Publishing Central</p>
+            <p style="font-size: 14px; line-height:1;font-family: poppins;font-weight: 500;color:#464646"><?=$link[0]->BrandName;?></p>
           </div>
 
               </td>
@@ -403,7 +403,7 @@ table, td { color: #000000; } #u_body a { color: #0000ee; text-decoration: under
                 <td style="overflow-wrap:break-word;word-break:break-word;padding:8px 15px 8px;font-family:arial,helvetica,sans-serif;background-color:#3c82f25d;border-right:7px solid #2C2CFE;" align="center">
 
             <div style="font-size: 14px; line-height: 140%; text-align: left; word-wrap: break-word;">
-              <p style="font-size: 14px; line-height:1;font-family: poppins;font-weight: 500;color:#464646">Book Editing</p>
+              <p style="font-size: 14px; line-height:1;font-family: poppins;font-weight: 500;color:#464646"><?=$link[0]->ServiceName;?></p>
             </div>
 
                 </td>
@@ -464,7 +464,7 @@ table, td { color: #000000; } #u_body a { color: #0000ee; text-decoration: under
                   <td style="overflow-wrap:break-word;word-break:break-word;padding:8px 15px 8px;font-family:arial,helvetica,sans-serif;background-color:#3c82f25d;border-right:7px solid #2C2CFE;" align="center">
 
               <div style="font-size: 14px; line-height: 140%; text-align: left; word-wrap: break-word;">
-                <p style="font-size: 14px; line-height:1;font-family: poppins;font-weight: 500;color:#464646">Humayun Ayaz</p>
+                <p style="font-size: 14px; line-height:1;font-family: poppins;font-weight: 500;color:#464646"><?=$link[0]->UserFirstName.' '.$link[0]->UserLastName;?></p>
               </div>
 
                   </td>
@@ -525,7 +525,7 @@ table, td { color: #000000; } #u_body a { color: #0000ee; text-decoration: under
                     <td style="overflow-wrap:break-word;word-break:break-word;padding:8px 15px 8px;font-family:arial,helvetica,sans-serif;background-color:#3c82f25d;border-right:7px solid #2C2CFE;" align="center">
 
                 <div style="font-size: 14px; line-height: 140%; text-align: left; word-wrap: break-word;">
-                  <p style="font-size: 14px; line-height:1;font-family: poppins;font-weight: 500;color:#464646">Rosc Hong</p>
+                  <p style="font-size: 14px; line-height:1;font-family: poppins;font-weight: 500;color:#464646"><?=$link[0]->customerName;?></p>
                 </div>
 
                     </td>
@@ -586,7 +586,7 @@ table, td { color: #000000; } #u_body a { color: #0000ee; text-decoration: under
                       <td style="overflow-wrap:break-word;word-break:break-word;padding:8px 15px 8px;font-family:arial,helvetica,sans-serif;background-color:#3c82f25d;border-right:7px solid #2C2CFE;" align="center">
 
                   <div style="font-size: 14px; line-height: 140%; text-align: left; word-wrap: break-word;">
-                    <p style="font-size: 14px; line-height:1;font-family: poppins;font-weight: 500;color:#464646">xyz@youremail.com</p>
+                    <p style="font-size: 14px; line-height:1;font-family: poppins;font-weight: 500;color:#464646"><?=$link[0]->CustomerEmail;?></p>
                   </div>
 
                       </td>
@@ -647,7 +647,7 @@ table, td { color: #000000; } #u_body a { color: #0000ee; text-decoration: under
                         <td style="overflow-wrap:break-word;word-break:break-word;padding:8px 15px 8px;font-family:arial,helvetica,sans-serif;background-color:#3c82f25d;border-right:7px solid #2C2CFE;" align="center">
 
                     <div style="font-size: 14px; line-height: 140%; text-align: left; word-wrap: break-word;">
-                      <p style="font-size: 14px; line-height:1;font-family: poppins;font-weight: 500;color:#464646">Fresh | Upsell | Remaining</p>
+                      <p style="font-size: 14px; line-height:1;font-family: poppins;font-weight: 500;color:#464646">N/A</p>
                     </div>
 
                         </td>
@@ -708,7 +708,7 @@ table, td { color: #000000; } #u_body a { color: #0000ee; text-decoration: under
                           <td style="overflow-wrap:break-word;word-break:break-word;padding:8px 15px 8px;font-family:arial,helvetica,sans-serif;background-color:#3c82f25d;border-right:7px solid #2C2CFE;" align="center">
 
                       <div style="font-size: 14px; line-height: 140%; text-align: left; word-wrap: break-word;">
-                        <p style="font-size: 14px; line-height:1;font-family: poppins;font-weight: 600;color:black">$ 1.944.00</p>
+                        <p style="font-size: 14px; line-height:1;font-family: poppins;font-weight: 600;color:black"><?=$link[0]->CurrencySign.' '.$link[0]->amount;?></p>
                       </div>
 
                           </td>

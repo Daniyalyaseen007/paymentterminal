@@ -221,4 +221,31 @@ class Api extends CI_Controller {
 	  $this->db->update("paymentlink", $array);
 	  echo $this->db->last_query();
 	}
+	public function sendemail(){
+		die();
+	    $config = Array(
+		  'protocol' => 'mail',
+		  'smtp_host' => 'ssl://mail.zenedgesystems.co',
+		  'smtp_port' => 465,
+		  'smtp_user' => 'terminal@zenedgesystems.co', // change it to yours
+		  'smtp_pass' => 'RfqxZ9HY+IBI', // change it to yours
+		  'mailtype' => 'html',
+		  'charset' => 'iso-8859-1',
+		  'wordwrap' => TRUE
+		);
+		$mesg = $this->load->view('mail/paymentemail','',true);
+		$this->load->library('email',$config);
+		$this->email->to("m.shahzaib@nextachllc.org");
+		$this->email->from('terminal@zenedgesystems.co');
+		$this->email->subject('Verification Code');
+		$this->email->message($mesg);
+		if($this->email->send())
+	    {
+	    	 echo 'Email sent.';
+	    }
+	     else
+	    {
+	     show_error($this->email->print_debugger());
+	    }
+	}
 }

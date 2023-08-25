@@ -70,8 +70,8 @@
                                                             </select>
                                                         </div>
                                                         <div class="col-md-5 mb-3">
-                                                            <select name="services" required class="form-control">
-                                                                <option value="">Select Service</option>
+                                                            <select multiple name="services" required class="form-control  select2-show-search form-select"  data-placeholder="Choose one">
+                                                                <option label="Choose one"></option>
                                                                 <?php 
                                                                 foreach($allservices as $services){
                                                                 ?>

@@ -645,6 +645,15 @@
 
         <!-- RIGHT SIDEBAR JS -->
         <script src="<?=base_url()?>assets/plugins/sidebar/sidebar.js"></script>
+
+
+
+        <!-- FORM ELEMENT ADVANCED JS -->
+        <link rel="modulepreload" href="<?=base_url()?>assets/js/formelementadvnced.js" />
+        <script type="module" src="<?=base_url()?>assets/js/formelementadvnced.js"></script>
+
+        <!-- BOOTSTRAP MAX-LENGTH JS -->
+        <script src="<?=base_url()?>assets/plugins/bootstrap-maxlength/dist/bootstrap-maxlength.min.js"></script>
         <!-- INTERNAL NOTIFICATIONS JS -->
         <script src="<?=base_url()?>assets/plugins/notify/js/rainbow.js"></script>
         <script src="<?=base_url()?>assets/plugins/notify/js/sample.js"></script>

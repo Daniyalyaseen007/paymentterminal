@@ -96,10 +96,10 @@ table, td { color: #000000; } #u_body a { color: #0000ee; text-decoration: under
 
 </head>
 
-<body class="clean-body u_body" style="margin: 0;padding: 0;-webkit-text-size-adjust: 100%;background-color:white;color: #000000">
+<body class="clean-body u_body" background="https://i.ibb.co/qpVhcg9/bg-img.jpg" style="-ms-text-size-adjust:100%;margin: 0;padding: 0;-webkit-text-size-adjust: 100%;color: #000000;background-image:url('https://i.ibb.co/qpVhcg9/bg-img.jpg');background-size:cover;background-repeat:no-repeat;">
   <!--[if IE]><div class="ie-container"><![endif]-->
   <!--[if mso]><div class="mso-container"><![endif]-->
-  <table id="u_body" style="border-collapse: collapse;table-layout: fixed;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;vertical-align: top;min-width: 320px;Margin: 0 auto;background:url('https://i.ibb.co/qpVhcg9/bg-img.jpg');background-size:cover;background-repeat:no-repeat;width:100%" cellpadding="0" cellspacing="0">
+  <table id="u_body" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse: collapse;table-layout: fixed;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;vertical-align: top;min-width: 320px;Margin: 0 auto;width:100%" cellpadding="0" cellspacing="0">
   <tbody>
   <tr style="vertical-align: top">
     <td style="word-break: break-word;border-collapse: collapse !important;vertical-align: top">
@@ -117,16 +117,16 @@ table, td { color: #000000; } #u_body a { color: #0000ee; text-decoration: under
   <div style="height: 100%;width: 100% !important;">
   <!--[if (!mso)&(!IE)]><!--><div style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;"><!--<![endif]-->
 
-<table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+<table style="mso-table-lspace:0pt;mso-table-rspace:0pt;font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
   <tbody>
     <tr>
       <td style="overflow-wrap:break-word;word-break:break-word;padding:15px;font-family:arial,helvetica,sans-serif;border-left:7px solid #2C2CFE;border-top:7px solid #2C2CFE;border-right:7px solid #2C2CFE;" align="left">
 
-<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="mso-table-lspace:0pt;mso-table-rspace:0pt;">
   <tr>
     <td style="padding-right: 0px;padding-left: 0px; padding-top:10px;" align="center">
 
-      <img align="center" border="0" src="https://i.ibb.co/mNnxCpG/Zenedge-Systems-logo-04.png" alt="Image" title="Image" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: inline-block !important;border: none;height: auto;float: none;width: 100%;max-width: 240px;" width="470"/>
+      <img align="center" border="0" src="https://i.ibb.co/mNnxCpG/Zenedge-Systems-logo-04.png" alt="Image" title="Image" style="-ms-interpolation-mode:bicubic;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: inline-block !important;border: none;height: auto;float: none;width: 100%;max-width: 240px;" width="240"/>
       <h2 align="center" border="0"  style="text-transform:uppercase;margin:0;padding-top:20px;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: inline-block !important;border: none;height: auto;float: none;width: 70%; font-family:poppins;font-weight: bold;font-size:27px;"> Congratulations! </h2>
       <p align="center" border="0"  style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: inline-block !important;border: none;height: auto;float: none;width: 70%;font-family:poppins;font-weight: normal;font-size:15px;"> we Have Recieved a New Payment. </p>
     </td>
@@ -150,20 +150,15 @@ table, td { color: #000000; } #u_body a { color: #0000ee; text-decoration: under
 
   <div class="u-row-container" style="padding: 0px 0px 0px;background-color: transparent">
     <div class="u-row" style="margin:0 auto;">
-      <div style="border-collapse: collapse;display: table;width: 100%;height: 100%;background-color: transparent;">
+      <div style="border-collapse: collapse;display: table;width: 100%;height: 100%;background-color: white;">
         <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding: 20px 0px 0px;background-color: transparent;" align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:500px;"><tr style="background-color: #ffffff;"><![endif]-->
 
+ <!--[if (!mso)&(!IE)]><!--><div style="box-sizing: border-box; height: 100%; padding: 0px;"><!--<![endif]-->
 
-  <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+  <table style="mso-table-lspace:0pt;mso-table-rspace:0pt;font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
     <tbody>
       <tr>
-        <td style="overflow-wrap:break-word;word-break:break-word;padding:0px;font-family:arial,helvetica,sans-serif;padding:0px 0px 20px; width:400px;background-color:#4e91fc24;" align="left">
- <!--[if (!mso)&(!IE)]><!--><div style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;"><!--<![endif]-->
-
-  <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
-    <tbody>
-      <tr>
-        <td style="overflow-wrap:break-word;word-break:break-word;padding:15px;font-family:arial,helvetica,sans-serif;" align="left">
+        <td style="overflow-wrap:break-word;word-break:break-word;padding:15px;font-family:arial,helvetica,sans-serif;background-color:#3c82f25d;border-left:7px solid #2C2CFE;border-right:7px solid #2C2CFE;" align="center">
 
   <table width="100%" cellpadding="0" cellspacing="0" border="0">
     <tr>
@@ -181,7 +176,7 @@ table, td { color: #000000; } #u_body a { color: #0000ee; text-decoration: under
 
     <!--[if (!mso)&(!IE)]><!--></div><!--<![endif]-->
 
-<div class="u-row-container" style="padding: 0px;background-color: transparent">
+<div class="u-row-container" style="padding: 0px;background-color: transparent;">
   <div class="u-row" style="margin: 0 auto;min-width: 320px;max-width: 500px;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;background-color: transparent;">
     <div style="border-collapse: collapse;display: table;width: 100%;height: 100%;background-color: transparent;">
       <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding: 0px;background-color: transparent;" align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:500px;"><tr style="background-color: #ffffff;"><![endif]-->
@@ -194,10 +189,10 @@ table, td { color: #000000; } #u_body a { color: #0000ee; text-decoration: under
 
 
 
-<table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+<table style="mso-table-lspace:0pt;mso-table-rspace:0pt;font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
   <tbody>
     <tr>
-      <td style="overflow-wrap:break-word;word-break:break-word;padding:8px 15px 8px;font-family:arial,helvetica,sans-serif;" align="center">
+      <td style="overflow-wrap:break-word;word-break:break-word;padding:8px 15px 8px;font-family:arial,helvetica,sans-serif;background-color:#3c82f25d;border-left:7px solid #2C2CFE;" align="center">
 
   <div style="font-size: 14px; line-height: 140%; text-align: left; word-wrap: break-word;">
     <p style="font-size: 14px; line-height:1;font-family: poppins;font-weight: 500;">Payment Date</p>
@@ -219,10 +214,10 @@ table, td { color: #000000; } #u_body a { color: #0000ee; text-decoration: under
 
 
 
-    <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+    <table style="mso-table-lspace:0pt;mso-table-rspace:0pt;font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
       <tbody>
         <tr>
-          <td style="overflow-wrap:break-word;word-break:break-word;padding:8px 15px 8px;font-family:arial,helvetica,sans-serif;" align="center">
+          <td style="overflow-wrap:break-word;word-break:break-word;padding:8px 15px 8px;font-family:arial,helvetica,sans-serif;background-color:#3c82f25d;border-right:7px solid #2C2CFE;" align="center">
 
       <div style="font-size: 14px; line-height: 140%; text-align: left; word-wrap: break-word;">
         <p style="font-size: 14px; line-height:1;font-family: poppins;font-weight: 500;color:#464646">24-Aug-2023</p>
@@ -255,10 +250,10 @@ table, td { color: #000000; } #u_body a { color: #0000ee; text-decoration: under
 
 
 
-  <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+  <table style="mso-table-lspace:0pt;mso-table-rspace:0pt;font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
     <tbody>
       <tr>
-        <td style="overflow-wrap:break-word;word-break:break-word;padding:8px 15px 8px;font-family:arial,helvetica,sans-serif;" align="center">
+        <td style="overflow-wrap:break-word;word-break:break-word;padding:8px 15px 8px;font-family:arial,helvetica,sans-serif;background-color:#3c82f25d;border-left:7px solid #2C2CFE;" align="center">
 
     <div style="font-size: 14px; line-height: 140%; text-align: left; word-wrap: break-word;">
       <p style="font-size: 14px; line-height:1;font-family: poppins;font-weight: 500;">Transaction ID</p>
@@ -280,10 +275,10 @@ table, td { color: #000000; } #u_body a { color: #0000ee; text-decoration: under
 
 
 
-      <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+      <table style="mso-table-lspace:0pt;mso-table-rspace:0pt;font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
         <tbody>
           <tr>
-            <td style="overflow-wrap:break-word;word-break:break-word;padding:8px 15px 8px;font-family:arial,helvetica,sans-serif;" align="center">
+            <td style="overflow-wrap:break-word;word-break:break-word;padding:8px 15px 8px;font-family:arial,helvetica,sans-serif;background-color:#3c82f25d;border-right:7px solid #2C2CFE;" align="center">
 
         <div style="font-size: 14px; line-height: 140%; text-align: left; word-wrap: break-word;">
           <p style="font-size: 14px; line-height:1;font-family: poppins;font-weight: 500;color:#464646">ch_abcd934</p>
@@ -316,10 +311,10 @@ table, td { color: #000000; } #u_body a { color: #0000ee; text-decoration: under
 
 
 
-    <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+    <table style="mso-table-lspace:0pt;mso-table-rspace:0pt;font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
       <tbody>
         <tr>
-          <td style="overflow-wrap:break-word;word-break:break-word;padding:8px 15px 8px;font-family:arial,helvetica,sans-serif;" align="center">
+          <td style="overflow-wrap:break-word;word-break:break-word;padding:8px 15px 8px;font-family:arial,helvetica,sans-serif;background-color:#3c82f25d;border-left:7px solid #2C2CFE;" align="center">
 
       <div style="font-size: 14px; line-height: 140%; text-align: left; word-wrap: break-word;">
         <p style="font-size: 14px; line-height:1;font-family: poppins;font-weight: 500;">Brand Name</p>
@@ -341,10 +336,10 @@ table, td { color: #000000; } #u_body a { color: #0000ee; text-decoration: under
 
 
 
-        <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+        <table style="mso-table-lspace:0pt;mso-table-rspace:0pt;font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
           <tbody>
             <tr>
-              <td style="overflow-wrap:break-word;word-break:break-word;padding:8px 15px 8px;font-family:arial,helvetica,sans-serif;" align="center">
+              <td style="overflow-wrap:break-word;word-break:break-word;padding:8px 15px 8px;font-family:arial,helvetica,sans-serif;background-color:#3c82f25d;border-right:7px solid #2C2CFE;" align="center">
 
           <div style="font-size: 14px; line-height: 140%; text-align: left; word-wrap: break-word;">
             <p style="font-size: 14px; line-height:1;font-family: poppins;font-weight: 500;color:#464646">Amazon Publishing Central</p>
@@ -377,10 +372,10 @@ table, td { color: #000000; } #u_body a { color: #0000ee; text-decoration: under
 
 
 
-      <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+      <table style="mso-table-lspace:0pt;mso-table-rspace:0pt;font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
         <tbody>
           <tr>
-            <td style="overflow-wrap:break-word;word-break:break-word;padding:8px 15px 8px;font-family:arial,helvetica,sans-serif;" align="center">
+            <td style="overflow-wrap:break-word;word-break:break-word;padding:8px 15px 8px;font-family:arial,helvetica,sans-serif;background-color:#3c82f25d;border-left:7px solid #2C2CFE;" align="center">
 
         <div style="font-size: 14px; line-height: 140%; text-align: left; word-wrap: break-word;">
           <p style="font-size: 14px; line-height:1;font-family: poppins;font-weight: 500;">Service Name</p>
@@ -402,10 +397,10 @@ table, td { color: #000000; } #u_body a { color: #0000ee; text-decoration: under
 
 
 
-          <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+          <table style="mso-table-lspace:0pt;mso-table-rspace:0pt;font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
             <tbody>
               <tr>
-                <td style="overflow-wrap:break-word;word-break:break-word;padding:8px 15px 8px;font-family:arial,helvetica,sans-serif;" align="center">
+                <td style="overflow-wrap:break-word;word-break:break-word;padding:8px 15px 8px;font-family:arial,helvetica,sans-serif;background-color:#3c82f25d;border-right:7px solid #2C2CFE;" align="center">
 
             <div style="font-size: 14px; line-height: 140%; text-align: left; word-wrap: break-word;">
               <p style="font-size: 14px; line-height:1;font-family: poppins;font-weight: 500;color:#464646">Book Editing</p>
@@ -438,10 +433,10 @@ table, td { color: #000000; } #u_body a { color: #0000ee; text-decoration: under
 
 
 
-        <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+        <table style="mso-table-lspace:0pt;mso-table-rspace:0pt;font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
           <tbody>
             <tr>
-              <td style="overflow-wrap:break-word;word-break:break-word;padding:8px 15px 8px;font-family:arial,helvetica,sans-serif;" align="center">
+              <td style="overflow-wrap:break-word;word-break:break-word;padding:8px 15px 8px;font-family:arial,helvetica,sans-serif;background-color:#3c82f25d;border-left:7px solid #2C2CFE;" align="center">
 
           <div style="font-size: 14px; line-height: 140%; text-align: left; word-wrap: break-word;">
             <p style="font-size: 14px; line-height:1;font-family: poppins;font-weight: 500;">Agent Name</p>
@@ -463,10 +458,10 @@ table, td { color: #000000; } #u_body a { color: #0000ee; text-decoration: under
 
 
 
-            <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+            <table style="mso-table-lspace:0pt;mso-table-rspace:0pt;font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
               <tbody>
                 <tr>
-                  <td style="overflow-wrap:break-word;word-break:break-word;padding:8px 15px 8px;font-family:arial,helvetica,sans-serif;" align="center">
+                  <td style="overflow-wrap:break-word;word-break:break-word;padding:8px 15px 8px;font-family:arial,helvetica,sans-serif;background-color:#3c82f25d;border-right:7px solid #2C2CFE;" align="center">
 
               <div style="font-size: 14px; line-height: 140%; text-align: left; word-wrap: break-word;">
                 <p style="font-size: 14px; line-height:1;font-family: poppins;font-weight: 500;color:#464646">Humayun Ayaz</p>
@@ -499,10 +494,10 @@ table, td { color: #000000; } #u_body a { color: #0000ee; text-decoration: under
 
 
 
-          <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+          <table style="mso-table-lspace:0pt;mso-table-rspace:0pt;font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
             <tbody>
               <tr>
-                <td style="overflow-wrap:break-word;word-break:break-word;padding:8px 15px 8px;font-family:arial,helvetica,sans-serif;" align="center">
+                <td style="overflow-wrap:break-word;word-break:break-word;padding:8px 15px 8px;font-family:arial,helvetica,sans-serif;background-color:#3c82f25d;border-left:7px solid #2C2CFE;" align="center">
 
             <div style="font-size: 14px; line-height: 140%; text-align: left; word-wrap: break-word;">
               <p style="font-size: 14px; line-height:1;font-family: poppins;font-weight: 500;">Client Name</p>
@@ -524,10 +519,10 @@ table, td { color: #000000; } #u_body a { color: #0000ee; text-decoration: under
 
 
 
-              <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+              <table style="mso-table-lspace:0pt;mso-table-rspace:0pt;font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
                 <tbody>
                   <tr>
-                    <td style="overflow-wrap:break-word;word-break:break-word;padding:8px 15px 8px;font-family:arial,helvetica,sans-serif;" align="center">
+                    <td style="overflow-wrap:break-word;word-break:break-word;padding:8px 15px 8px;font-family:arial,helvetica,sans-serif;background-color:#3c82f25d;border-right:7px solid #2C2CFE;" align="center">
 
                 <div style="font-size: 14px; line-height: 140%; text-align: left; word-wrap: break-word;">
                   <p style="font-size: 14px; line-height:1;font-family: poppins;font-weight: 500;color:#464646">Rosc Hong</p>
@@ -560,10 +555,10 @@ table, td { color: #000000; } #u_body a { color: #0000ee; text-decoration: under
 
 
 
-            <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+            <table style="mso-table-lspace:0pt;mso-table-rspace:0pt;font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
               <tbody>
                 <tr>
-                  <td style="overflow-wrap:break-word;word-break:break-word;padding:8px 15px 8px;font-family:arial,helvetica,sans-serif;" align="center">
+                  <td style="overflow-wrap:break-word;word-break:break-word;padding:8px 15px 8px;font-family:arial,helvetica,sans-serif;background-color:#3c82f25d;border-left:7px solid #2C2CFE;" align="center">
 
               <div style="font-size: 14px; line-height: 140%; text-align: left; word-wrap: break-word;">
                 <p style="font-size: 14px; line-height:1;font-family: poppins;font-weight: 500;">Client Email</p>
@@ -585,10 +580,10 @@ table, td { color: #000000; } #u_body a { color: #0000ee; text-decoration: under
 
 
 
-                <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+                <table style="mso-table-lspace:0pt;mso-table-rspace:0pt;font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
                   <tbody>
                     <tr>
-                      <td style="overflow-wrap:break-word;word-break:break-word;padding:8px 15px 8px;font-family:arial,helvetica,sans-serif;" align="center">
+                      <td style="overflow-wrap:break-word;word-break:break-word;padding:8px 15px 8px;font-family:arial,helvetica,sans-serif;background-color:#3c82f25d;border-right:7px solid #2C2CFE;" align="center">
 
                   <div style="font-size: 14px; line-height: 140%; text-align: left; word-wrap: break-word;">
                     <p style="font-size: 14px; line-height:1;font-family: poppins;font-weight: 500;color:#464646">xyz@youremail.com</p>
@@ -621,10 +616,10 @@ table, td { color: #000000; } #u_body a { color: #0000ee; text-decoration: under
 
 
 
-              <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+              <table style="mso-table-lspace:0pt;mso-table-rspace:0pt;font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
                 <tbody>
                   <tr>
-                    <td style="overflow-wrap:break-word;word-break:break-word;padding:8px 15px 8px;font-family:arial,helvetica,sans-serif;" align="center">
+                    <td style="overflow-wrap:break-word;word-break:break-word;padding:8px 15px 8px;font-family:arial,helvetica,sans-serif;background-color:#3c82f25d;border-left:7px solid #2C2CFE;" align="center">
 
                 <div style="font-size: 14px; line-height: 140%; text-align: left; word-wrap: break-word;">
                   <p style="font-size: 14px; line-height:1;font-family: poppins;font-weight: 500;">Payment Type</p>
@@ -646,10 +641,10 @@ table, td { color: #000000; } #u_body a { color: #0000ee; text-decoration: under
 
 
 
-                  <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+                  <table style="mso-table-lspace:0pt;mso-table-rspace:0pt;font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
                     <tbody>
                       <tr>
-                        <td style="overflow-wrap:break-word;word-break:break-word;padding:8px 15px 8px;font-family:arial,helvetica,sans-serif;" align="center">
+                        <td style="overflow-wrap:break-word;word-break:break-word;padding:8px 15px 8px;font-family:arial,helvetica,sans-serif;background-color:#3c82f25d;border-right:7px solid #2C2CFE;" align="center">
 
                     <div style="font-size: 14px; line-height: 140%; text-align: left; word-wrap: break-word;">
                       <p style="font-size: 14px; line-height:1;font-family: poppins;font-weight: 500;color:#464646">Fresh | Upsell | Remaining</p>
@@ -682,10 +677,10 @@ table, td { color: #000000; } #u_body a { color: #0000ee; text-decoration: under
 
 
 
-                <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+                <table style="mso-table-lspace:0pt;mso-table-rspace:0pt;font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
                   <tbody>
                     <tr>
-                      <td style="overflow-wrap:break-word;word-break:break-word;padding:8px 15px 8px;font-family:arial,helvetica,sans-serif;" align="center">
+                      <td style="overflow-wrap:break-word;word-break:break-word;padding:8px 15px 8px;font-family:arial,helvetica,sans-serif;background-color:#3c82f25d;border-left:7px solid #2C2CFE;" align="center">
 
                   <div style="font-size: 14px; line-height: 140%; text-align: left; word-wrap: break-word;">
                     <p style="font-size: 14px; line-height:1;font-family: poppins;font-weight:600;">Total Payment</p>
@@ -707,10 +702,10 @@ table, td { color: #000000; } #u_body a { color: #0000ee; text-decoration: under
 
 
 
-                    <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+                    <table style="mso-table-lspace:0pt;mso-table-rspace:0pt;font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
                       <tbody>
                         <tr>
-                          <td style="overflow-wrap:break-word;word-break:break-word;padding:8px 15px 8px;font-family:arial,helvetica,sans-serif;" align="center">
+                          <td style="overflow-wrap:break-word;word-break:break-word;padding:8px 15px 8px;font-family:arial,helvetica,sans-serif;background-color:#3c82f25d;border-right:7px solid #2C2CFE;" align="center">
 
                       <div style="font-size: 14px; line-height: 140%; text-align: left; word-wrap: break-word;">
                         <p style="font-size: 14px; line-height:1;font-family: poppins;font-weight: 600;color:black">$ 1.944.00</p>
@@ -730,10 +725,7 @@ table, td { color: #000000; } #u_body a { color: #0000ee; text-decoration: under
                   </div>
                   </div>
 
-</td>
-</tr>
-</tbody>
-</table>
+
 
 <!--[if (mso)|(IE)]></td><![endif]-->
       <!--[if (mso)|(IE)]></tr></table></td></tr></table><![endif]-->
@@ -743,18 +735,18 @@ table, td { color: #000000; } #u_body a { color: #0000ee; text-decoration: under
 
 
   <div class="u-row-container" style="padding: 0px 0px 60px;background-color: transparent">
-    <div class="u-row" style="margin: 0 auto;min-width: 320px;max-width: 486px;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;background-color: #ffffff;border-left:7px solid #2C2CFE;border-right:7px solid #2C2CFE;border-bottom:7px solid #2C2CFE;">
+    <div class="u-row" style="margin: 0 auto;min-width: 220px;max-width: 520px;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;background-color: #ffffff;border-left:7px solid #2C2CFE;border-right:7px solid #2C2CFE;border-bottom:7px solid #2C2CFE;">
       <div style="border-collapse: collapse;display: table;width: 100%;height: 100%;background-color: transparent;">
         <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding: 20px 0px 0px;background-color: transparent;" align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:500px;"><tr style="background-color: #ffffff;"><![endif]-->
 
           <div class="u-row-container" style="padding: 0px;background-color: transparent">
-            <div class="u-row" style="margin: 0 auto;min-width: 320px;max-width: 500px;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;background-color: transparent;">
+            <div class="u-row" style="margin: 0 auto;min-width: 220px;max-width: 520px;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;background-color: transparent;">
               <div style="border-collapse: collapse;display: table;width: 100%;height: 100%;background-color: transparent;">
                 <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding: 0px;background-color: transparent;" align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:500px;"><tr style="background-color: #ffffff;"><![endif]-->
 
 
           <!--[if (mso)|(IE)]><td align="center" width="250" style="width: 250px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;" valign="top"><![endif]-->
-          <div class="u-col u-col-50" style="max-width: 320px;min-width: 250px;display: table-cell;vertical-align: top;">
+          <div class="u-col u-col-50" style="max-width: 200px;min-width: 150px;display: table-cell;vertical-align: top;">
             <div style="height: 100%;width: 100% !important;">
             <!--[if (!mso)&(!IE)]><!--><div style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;"><!--<![endif]-->
 
@@ -763,23 +755,25 @@ table, td { color: #000000; } #u_body a { color: #0000ee; text-decoration: under
           <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
             <tbody>
               <tr>
-                <td style="overflow-wrap:break-word;word-break:break-word;padding:40px 0px 40px 50px;font-family:arial,helvetica,sans-serif;" align="center">
+                <td style="overflow-wrap:break-word;word-break:break-word; padding: 30px 0px 0px 80px;font-family:arial,helvetica,sans-serif;" align="center">
 
                   <div style="font-size: 14px; line-height: 1; text-align: left; word-wrap: break-word;">
-                    <a href="" style="border-radius:5px;padding:10px 20px;text-decoration:none;color:white;background-image: linear-gradient(90deg,#4E91FC,#4E6AFC,#4E91FC);">Download Receipt</a>
+                    <a href="https:www.google.com/" style="border-radius:5px;padding:0px 0px;text-decoration:none;color:white;">
+                        <img src="https://i.ibb.co/hRTcDyN/Screenshot-2023-08-25-171938.png" alt="Screenshot-2023-08-25-171938" border="0" width="150">
+                        </a>
                      </div>
 
-                </td>
+                <!-- </td>
               </tr>
             </tbody>
-          </table>
+          </table> -->
 
             <!--[if (!mso)&(!IE)]><!--></div><!--<![endif]-->
             </div>
           </div>
           <!--[if (mso)|(IE)]></td><![endif]-->
           <!--[if (mso)|(IE)]><td align="center" width="250" style="width: 250px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;" valign="top"><![endif]-->
-          <div class="u-col u-col-50" style="max-width: 320px;min-width: 250px;display: table-cell;vertical-align: top;">
+          <div class="u-col u-col-50" style="max-width: 200px;min-width: 150px;display: table-cell;vertical-align: top;">
             <div style="height: 100%;width: 100% !important;">
             <!--[if (!mso)&(!IE)]><!--><div style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;"><!--<![endif]-->
 
@@ -788,10 +782,12 @@ table, td { color: #000000; } #u_body a { color: #0000ee; text-decoration: under
               <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
                 <tbody>
                   <tr>
-                    <td style="overflow-wrap:break-word;word-break:break-word;padding:40px 50px 40px 0px;font-family:arial,helvetica,sans-serif;" align="center">
+                    <td style="position:relative;top:-40px;overflow-wrap:break-word;word-break:break-word;padding: 0px 20px 0px 50px;font-family:arial,helvetica,sans-serif;" align="center">
 
                 <div style="font-size: 14px; line-height: 1; text-align: left; word-wrap: break-word;">
-               <a href="" style="border-radius:5px;padding:10px 20px;text-decoration:none;color:white;background-image: linear-gradient(90deg,#4E91FC,#4E6AFC,#4E91FC);">Track  Your Transaction</a>
+               <a href="https://www.google.com/" style="border-radius:5px;padding:0px 0px;text-decoration:none;color:white;">
+<img src="https://i.ibb.co/9yx8C8X/Screenshot-2023-08-25-172006.png" alt="Screenshot-2023-08-25-172006" border="0" width="160">
+                   </a>
                 </div>
 
                     </td>

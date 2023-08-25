@@ -68,7 +68,7 @@
                                                                 $statusbtn = '<button class="btn btn-danger">Pending</button>';
                                                             }
                                                             if($link['LinkStatus']==3){
-                                                                $statusbtn = '<button class="btn btn-warning">Payment Decline</button>';
+                                                                $statusbtn = '<button class="btn btn-danger">Payment Decline</button>';
                                                             }
                                                             else{
                                                                 $statusbtn = '<button class="btn btn-info">Paid</button>';

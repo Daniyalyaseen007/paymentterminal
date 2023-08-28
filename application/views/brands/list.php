@@ -71,7 +71,9 @@
                                                             <tr>
                                                                 <td><?=++$count?></td>
                                                                 <td><?=$brand['BrandName']?></td>
-                                                                <td>Logo</td>
+                                                                <td>
+                                                                    <img height="100px" width="150px" src="<?=base_url().'brand-logo/'.$brand['BrandLogo']?>">
+                                                                </td>
                                                                 <td><?=$brand['BrandURL']?></td>
                                                                 <td><?=$brand['BrandEmail']?></td>
                                                                 <td><?=date_format(date_create($brand['Created']),'d-M-Y h:i a')?></td>

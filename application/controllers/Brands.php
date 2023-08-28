@@ -52,10 +52,32 @@ class Brands extends CI_Controller {
 		$this->load->view('include/footer');
 	}
 	public function process(){
-		$this->db->insert(" brands",$_POST);
-		$insertid= $this->db->insert_id();
-		if($insertid>0){
-			redirect('brands/list/success','refresh');
-		}
+		//print_r($_POST);
+		$config['upload_path'] = './brand-logo/';
+		$config['allowed_types'] = 'gif|jpg|png';
+		$config['max_size'] = '*';
+        $config['max_width'] = '*';
+        $config['max_height'] = '*';
+        $config['file_name'] = $_POST['BrandName'];
+        $this->load->library('upload', $config);
+        if (!$this->upload->do_upload('BrandLogo')){
+        	$error = array('error' => $this->upload->display_errors());
+        }
+        else{
+        	$data = array('image_metadata' => $this->upload->data());
+        	$image= $data["image_metadata"]["file_name"];
+        	$array = array(
+        		"BrandName"=>$_POST["BrandName"],
+        		"BrandURL"=>$_POST["BrandURL"],
+        		"BrandEmail"=>$_POST["BrandEmail"],
+        		"BrandLogo"=>$image
+        	);
+        	$this->db->insert(" brands",$array);
+			$insertid= $this->db->insert_id();
+			if($insertid>0){
+				redirect('brands/list/success','refresh');
+			}
+        //	print_r($data);
+        }
 	}
 }

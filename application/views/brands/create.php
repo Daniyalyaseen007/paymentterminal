@@ -42,10 +42,22 @@
                                         </div>
                                         <div class="card-body">
                                             <div class="d-flex flex-column">
-                                                <form method="post" action="<?=base_url()?>brands/process">
-                                                     <div class="form-group">
+                                                <form method="post" action="<?=base_url()?>brands/process" enctype="multipart/form-data">
+                                                    <div class="form-group">
                                                         <input class="form-control" name="BrandName" placeholder="Enter Brands Name" type="text">
                                                     </div>
+                                                    <div class="form-group">
+                                                        <input class="form-control" name="BrandURL" placeholder="Brand Link" type="text">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input class="form-control" name="BrandEmail" placeholder="Enter Brand Email" type="text">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input name="BrandLogo" type="file" class="dropify" data-height="200" >
+                                                    </div>
+                                                    <!-- <div class="col-sm-12 col-md-4 mb-4 mb-lg-0">
+                                                    <input type="file" class="dropify" data-height="200" >
+                                                </div> -->
                                                     <button class="btn ripple btn-primary">Submit</button>   
                                                 </form>
                                             </div>

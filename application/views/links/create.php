@@ -70,8 +70,8 @@
                                                             </select>
                                                         </div>
                                                         <div class="col-md-5 mb-3">
-                                                            <select name="services" required class="form-control">
-                                                                <option value="">Select Service</option>
+                                                            <select multiple name="services[]" required class="form-control select2-show-search form-select" data-placeholder="Select Services">
+                                                                <option label="Select Services" value="">Select Service</option>
                                                                 <?php 
                                                                 foreach($allservices as $services){
                                                                 ?>
@@ -96,6 +96,7 @@
                                                         <div class="col-md-5 mb-3">
                                                             <input name="customerName" required class="form-control" placeholder="Enter Customer Name" type="text">
                                                         </div>
+
                                                         <div class="col-md-5 mb-3">
                                                             <select name="source" required class="form-control">
                                                                 <option value="">Select Source</option>
@@ -105,7 +106,14 @@
                                                                 <option value="SEO Marketing">SEO Marketing</option>
                                                             </select>
                                                         </div>
-
+                                                        <div class="col-md-5 mb-3">
+                                                            <select name="paymenttype" required class="form-control">
+                                                                <option value="">Select Type</option>
+                                                                <option value="PPC">Front</option>
+                                                                <option value="Social Media">Upsell</option>
+                                                                <option value="Email Marketing">Remaining</option>
+                                                            </select>
+                                                        </div>
                                                         <div class="col-md-5 mb-3">
                                                             <select name="currency" required class="form-control">
                                                                 <option value="">Select Currency</option>

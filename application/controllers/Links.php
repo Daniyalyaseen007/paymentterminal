@@ -47,6 +47,8 @@ class Links extends CI_Controller {
 		$this->load->view('include/footer');
 	}
 	public function process(){
+		print_r($_POST);
+		die();
 		$condition = array(
 				"MerchantID"=>$_POST["merchant"]
 				);

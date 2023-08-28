@@ -648,9 +648,7 @@
 
 
 
-        <!-- FORM ELEMENT ADVANCED JS -->
-        <link rel="modulepreload" href="<?=base_url()?>assets/js/formelementadvnced.js" />
-        <script type="module" src="<?=base_url()?>assets/js/formelementadvnced.js"></script>
+        
 
         <!-- BOOTSTRAP MAX-LENGTH JS -->
         <script src="<?=base_url()?>assets/plugins/bootstrap-maxlength/dist/bootstrap-maxlength.min.js"></script>
@@ -685,7 +683,7 @@
         <script src="<?=base_url()?>assets/plugins/datatable/js/buttons.colVis.min.js"></script>
         <script src="<?=base_url()?>assets/plugins/datatable/dataTables.responsive.min.js"></script>
         <script src="<?=base_url()?>assets/plugins/datatable/responsive.bootstrap5.min.js"></script>
-        <link rel="modulepreload" href="<?=base_url()?>assets/table-data-363338eb.js" />
+        <link rel="modulepreload" href="<?=base_url()?>assets/table-data.js" />
         <script type="module" src="<?=base_url()?>assets/js/table-data.js"></script>
         <!-- INDEX JS -->
         <link rel="modulepreload" href="<?=base_url()?>assets/index1-ff39d5a7.js" />
@@ -860,5 +858,21 @@
         }
 
         </script>
+        <!-- FORM ELEMENT ADVANCED JS -->
+        <link rel="modulepreload" href="<?=base_url()?>assets/js/formelementadvnced.js" />
+        <script type="module" src="<?=base_url()?>assets/js/formelementadvnced.js"></script>
+        <!-- INTERNAL FILEUPLOADS JS -->
+        <script src="<?=base_url()?>assets/plugins/fileuploads/js/fileupload.js"></script>
+        <script src="<?=base_url()?>assets/plugins/fileuploads/js/file-upload.js"></script>
+
+        <!-- SELECT2 JS -->
+        <script src="<?=base_url()?>assets/plugins/select2/select2.full.min.js"></script>
+
+        <!-- INTERNAL FANCY UPLOADER JS -->
+        <script src="<?=base_url()?>assets/plugins/fancyuploder/jquery.ui.widget.js"></script>
+        <script src="<?=base_url()?>assets/plugins/fancyuploder/jquery.fileupload.js"></script>
+        <script src="<?=base_url()?>assets/plugins/fancyuploder/jquery.iframe-transport.js"></script>
+        <script src="<?=base_url()?>assets/plugins/fancyuploder/jquery.fancy-fileupload.js"></script>
+        <script src="<?=base_url()?>assets/plugins/fancyuploder/fancy-uploader.js"></script>
     </body>
 </html>

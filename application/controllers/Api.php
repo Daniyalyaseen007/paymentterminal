@@ -252,4 +252,16 @@ class Api extends CI_Controller {
 	     show_error($this->email->print_debugger());
 	    }
 	}
+	public function getbrandsdetails(){
+		$token = $_POST["token"];
+	    $sql3 ="SELECT brands.BrandName FROM paymentlink inner join brands on brands.BrandID=paymentlink.brand where tokenID='$token'";
+        $query3 = $this->db->query($sql3);
+        $row3 = $query3->result();
+        if(!empty($row3)){
+            echo json_encode($row3,true);
+        }
+        else{
+            echo 0;
+        }
+	}
 }

@@ -254,7 +254,7 @@ class Api extends CI_Controller {
 	}
 	public function getbrandsdetails(){
 		$token = $_POST["token"];
-	    $sql3 ="SELECT brands.BrandName FROM paymentlink inner join brands on brands.BrandID=paymentlink.brand where tokenID='$token'";
+	    $sql3 ="SELECT brands.* FROM paymentlink inner join brands on brands.BrandID=paymentlink.brand where tokenID='$token'";
         $query3 = $this->db->query($sql3);
         $row3 = $query3->result();
         if(!empty($row3)){

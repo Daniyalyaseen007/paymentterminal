@@ -403,7 +403,19 @@ table, td { color: #000000; } #u_body a { color: #0000ee; text-decoration: under
                 <td style="overflow-wrap:break-word;word-break:break-word;padding:8px 15px 8px;font-family:arial,helvetica,sans-serif;background-color:#3c82f25d;border-right:7px solid #2C2CFE;" align="center">
 
             <div style="font-size: 14px; line-height: 140%; text-align: left; word-wrap: break-word;">
-              <p style="font-size: 14px; line-height:1;font-family: poppins;font-weight: 500;color:#464646"><?=$links[0]['ServiceName'];?></p>
+              <?php 
+                $services = $links[0]["services"];
+                $services = explode(",",$services);
+                $serviceText = '';
+                foreach($services as $serv){
+                    $servID = $serv;
+                    $CI=&get_instance();
+                    $UserLeads = $CI->Service($servID);
+                    $serviceText .= $UserLeads[0]["ServiceName"].',';
+                }
+                $serviceText = rtrim($serviceText, ',');
+              ?>
+              <p style="font-size: 14px; line-height:1;font-family: poppins;font-weight: 500;color:#464646"><?=$serviceText;?></p>
             </div>
 
                 </td>

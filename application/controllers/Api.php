@@ -221,6 +221,11 @@ class Api extends CI_Controller {
 	  $this->db->update("paymentlink", $array);
 	  echo $this->db->last_query();
 	}
+	public function Service($ID=null){
+		$array = array("ServiceID"=>$ID);
+		$child= $this->services->SearchServices($array);
+        return $child;
+	}
 	public function sendemail(){
 		$tokenID = $_POST["tokenID"];
 		$array = array("a.tokenID"=>$tokenID);

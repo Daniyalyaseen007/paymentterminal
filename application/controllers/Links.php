@@ -47,8 +47,11 @@ class Links extends CI_Controller {
 		$this->load->view('include/footer');
 	}
 	public function process(){
-		print_r($_POST);
-		die();
+		$service = '';
+		foreach($_POST["services"] as $services){
+			$service .= $services.',';
+		}
+		$service = rtrim($service, ',');
 		$condition = array(
 				"MerchantID"=>$_POST["merchant"]
 				);
@@ -60,7 +63,7 @@ class Links extends CI_Controller {
 				"merchant"=>$_POST["merchant"],
 				"agent"=>$_POST["agent"],
 				"brand"=>$_POST["brand"],
-				"services"=>$_POST["services"],
+				"services"=>$service,
 				"currency"=>$_POST["currency"],
 				"amount"=>$_POST["amount"],
 				"tax"=>$_POST["tax"],
@@ -69,7 +72,8 @@ class Links extends CI_Controller {
 				"tokenID"=>$tokenid,
 				"paymentLink"=>$link."".$tokenid,
 				"customerName"=>$_POST["customerName"],
-				"source"=>$_POST["source"]
+				"source"=>$_POST["source"],
+				"paymenttype"=>$_POST["paymenttype"],
 			);
 		$this->db->insert("paymentlink",$array);
 		$insertid= $this->db->insert_id();
@@ -99,5 +103,10 @@ class Links extends CI_Controller {
 		$this->load->view('include/side-menu');
 		$this->load->view('links/list',$data);
 		$this->load->view('include/footer');
+	}
+	public function Service($ID=null){
+		$array = array("ServiceID"=>$ID);
+		$child= $this->services->SearchServices($array);
+        return $child;
 	}
 }

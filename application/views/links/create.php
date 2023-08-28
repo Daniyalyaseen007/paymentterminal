@@ -109,9 +109,9 @@
                                                         <div class="col-md-5 mb-3">
                                                             <select name="paymenttype" required class="form-control">
                                                                 <option value="">Select Type</option>
-                                                                <option value="PPC">Front</option>
-                                                                <option value="Social Media">Upsell</option>
-                                                                <option value="Email Marketing">Remaining</option>
+                                                                <option value="Front">Front</option>
+                                                                <option value="Upsell">Upsell</option>
+                                                                <option value="Remaining">Remaining</option>
                                                             </select>
                                                         </div>
                                                         <div class="col-md-5 mb-3">

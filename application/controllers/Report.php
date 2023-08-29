@@ -43,4 +43,9 @@ class Report extends CI_Controller {
 		$this->load->view('report/sales-sheet',$data);
 		$this->load->view('include/footer');
 	}
+	public function Service($ID=null){
+		$array = array("ServiceID"=>$ID);
+		$child= $this->services->SearchServices($array);
+        return $child;
+	}
 }

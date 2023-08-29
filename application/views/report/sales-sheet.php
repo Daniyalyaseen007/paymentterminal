@@ -78,12 +78,22 @@
 
                                                             }
                                                             //$ServiceID = $service["ServiceID"];
+                                                            $services = $link["services"];
+                                                            $services = explode(",",$services);
+                                                            $serviceText = '';
+                                                            foreach($services as $serv){
+                                                                $servID = $serv;
+                                                                $CI=&get_instance();
+                                                                $UserLeads = $CI->Service($servID);
+                                                                $serviceText .= $UserLeads[0]["ServiceName"].',';
+                                                            }
+                                                            $serviceText = rtrim($serviceText, ',');
                                                             ?>
                                                             <tr>
                                                                 <td><?=++$count;?></td>
                                                                 <td><?=$link["M_DName"]?></td>
                                                                 <td><?=$link["BrandName"]?></td>
-                                                                <td><?=$link["ServiceName"]?></td>
+                                                                <td><?=$serviceText?></td>
                                                                 <td><?=$link["UserFirstName"].' '.$link["UserLastName"]?></td>
                                                                 <td><?=$link["customerName"]?></td>
                                                                 

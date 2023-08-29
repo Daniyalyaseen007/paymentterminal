@@ -71,4 +71,83 @@ class Merchants extends CI_Controller {
 		$insertid = $this->db->insert_id();
 		redirect('merchants/list/success','refresh');
 	}
+	public function details(){
+		$response = '';
+		$response = '<table class="table table-striped table-responsive table-bordered">';
+		$array = array("MerchantID"=>$_POST['MerchantID']);
+		$data["merchants"] = $this->merchants->merchantsbycondition($array);
+		$details = explode(",",$data["merchants"][0]["MerDetails"]);
+		//$details = explode("=",$details);
+		$response .= '<tr>';
+		$r1 = '';
+		$r2 = '';
+		foreach($details as $detail){
+			
+			
+			$moredetail = explode("=",$detail);
+			$r1 .= '<td>'.$moredetail[0].'</td>';
+			$r2 .= '<td>'.$moredetail[1].'</td>';
+
+		}
+		$response .= $r1;
+		$response .= '</tr>';
+		$response .= '<tr>';
+		$response .= $r2;
+
+		$response .= '</tr>';
+
+		$response .= '</table>';
+		echo $response;
+	}
+	public function edit($slug=null){
+		$array = array("MerchantID"=>$slug);
+		$data["merchants"] = $this->merchants->merchantsbycondition($array);
+		$this->load->view('include/header');
+		$this->load->view('include/switcher');
+		$this->load->view('include/side-menu');
+		$this->load->view('merchants/edit',$data);
+		$this->load->view('include/footer');
+	}
+	public function edit_process(){
+		$MerchantID = $_POST["MerchantID"];
+		$array = array(
+			"M_DName"=>$_POST["M_DName"],
+			"M_RName"=>$_POST["M_RName"],
+			"Status"=>'1',
+			"created_at"=>date('Y-m-d H:i:s'),
+			"paymentlink"=>$_POST["paymentlink"],	
+		);
+		$text = '';
+		foreach($_POST["fieldname"] as $key=>$fieldname){
+			$value = $_POST["fieldvalue"][$key];
+			$text .= $fieldname.'='.$value.',';
+			
+			//$array[]
+		}
+		$text = rtrim($text, ',');
+		$array["MerDetails"] = $text;
+		$update_merchant = $this->merchants->updateMerchant($array,$MerchantID);
+		if($update_merchant){
+			redirect('merchants/list/success','refresh');
+		}
+		else{
+			redirect('merchants/list/failed','refresh');
+		}
+		//$this->db->insert("merchant",$array);
+		//$insertid = $this->db->insert_id();
+		//redirect('merchants/list/success','refresh');
+	}
+	public function delete(){
+		$MerchantID 		= $_POST["MerchantID"];
+		$array = array(
+			"Status"=>'0'
+		);
+		$update_merchant = $this->merchants->updateMerchant($array,$MerchantID);
+		if($update_merchant){
+			echo "success";
+		}
+		else{
+			echo "failed";
+		}
+	}
 }

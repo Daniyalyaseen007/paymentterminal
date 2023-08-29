@@ -60,9 +60,15 @@ $route['dashboard'] = 'Home/dashboard';
 
 
 $route['merchants/list'] = 'Merchants/list';
+$route['merchants/edit/(:any)'] = 'Merchants/edit/$1';
+
+
 $route['brands/list'] = 'Brands/list';
 $route['services/list'] = 'Services/list';
 $route['services/edit/(:any)'] = 'Services/edit/$1';
+
+$route['brands/edit/(:any)'] = 'Brands/edit/$1';
+
 
 
 $route['roles/list'] = 'Roles/list';

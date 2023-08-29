@@ -3,9 +3,18 @@
 class Merchant_models extends CI_Model {
 	public function allmerchants(){
 		$this->db->select('*');
-		$q = $this->db->get('merchant');
-		$response = $q->result_array();
-		return $response;
+		$this->db->from('merchant');
+		$this->db->where("Status",'1');
+		$this->db->order_by('MerchantID','DESC');
+		$q = $this->db->get();
+		if($q->num_rows() != 0)
+	    {
+	        return $q->result_array();
+	    }
+	    else
+	    {
+	        return false;
+	    }
 	}
 	public function merchantsbycondition($condition){
 		$this->db->select('*');
@@ -20,6 +29,11 @@ class Merchant_models extends CI_Model {
 	    {
 	        return false;
 	    }
+	}
+	public function updateMerchant($data,$condition){
+		$this->db->where('MerchantID', $condition);
+	  	$this->db->update("merchant", $data);
+	  	return true;
 	}
 }
 ?>

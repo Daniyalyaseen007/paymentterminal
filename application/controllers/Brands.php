@@ -80,4 +80,65 @@ class Brands extends CI_Controller {
         //	print_r($data);
         }
 	}
+	public function edit($slug=null){
+		
+		if($slug=='' || $slug==null){
+			$this->load->view('errors/404');
+		}
+		else{
+			$array = array(
+				"BrandID"=>$slug,
+			);
+			$data["SearchBrands"] = $this->brands->SearchBrands($array);
+			$this->load->view('include/header');
+			$this->load->view('include/switcher');
+			$this->load->view('include/side-menu');
+			$this->load->view('brands/edit',$data);
+			$this->load->view('include/footer');
+		}
+
+	}
+	public function edit_process(){
+		$BrandID = $_POST["BrandID"];
+		$config['upload_path'] = './brand-logo/';
+		$config['allowed_types'] = 'gif|jpg|png';
+		$config['max_size'] = '*';
+        $config['max_width'] = '*';
+        $config['max_height'] = '*';
+        $config['file_name'] = $_POST['BrandName'];
+        $this->load->library('upload', $config);
+        if (!$this->upload->do_upload('BrandLogo')){
+        	$error = array('error' => $this->upload->display_errors());
+        }
+        else{
+        	$data = array('image_metadata' => $this->upload->data());
+        	$image= $data["image_metadata"]["file_name"];
+        	$array = array(
+        		"BrandName"=>$_POST["BrandName"],
+        		"BrandURL"=>$_POST["BrandURL"],
+        		"BrandEmail"=>$_POST["BrandEmail"],
+        		"BrandLogo"=>$image
+        	);
+        	$updateBrands = $this->brands->updateBrands($array,$BrandID);
+			if($updateBrands){
+				redirect('brands/list/success','refresh');
+			}
+			else{
+				redirect('brands/list/failed','refresh');
+			}
+        }
+	}
+	public function delete(){
+		$BrandID 		= $_POST["BrandID"];
+		$array = array(
+			"BStatus"=>'0'
+		);
+		$updateBrands = $this->brands->updateBrands($array,$BrandID);
+		if($updateBrands){
+			echo "success";
+		}
+		else{
+			echo "failed";
+		}
+	}
 }

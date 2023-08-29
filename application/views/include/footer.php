@@ -734,6 +734,19 @@
         }
         ?>  
         <script>
+            function detailMerchant(id){
+                $("#largeModal").modal('toggle');
+                $(".modal-title").html("Merchant Details")
+                var MerchantID = id;
+                $.ajax({
+                    url:'<?=base_url()?>merchants/details',
+                    type:'post',
+                    data:{'MerchantID':MerchantID},
+                    success:function(res){
+                        $(".modal-body").html(res);
+                    }
+                }); 
+            }
             function deleteService(id){
                 var ServiceID = id;
                 $('body').removeClass('timer-alert');
@@ -751,6 +764,58 @@
                     url:'<?=base_url()?>services/delete',
                     type:'post',
                     data:{'ServiceID':ServiceID},
+                    success:function(res){
+                        if(res=='success'){
+                            swal("Deleted!", "Your imaginary file has been deleted.", "success");
+                            setTimeout(location.reload.bind(location), 900);
+                        }
+                    }
+                  });  
+                });
+            }
+            function deleteMerchant(id){
+                var MerchantID = id;
+                $('body').removeClass('timer-alert');
+                swal({
+                  title: "Are you sure?",
+                  text: "Your will not be able to recover this imaginary file!",
+                  type: "warning",
+                  showCancelButton: true,
+                  confirmButtonClass: "btn btn-danger",
+                  confirmButtonText: "Yes, delete it!",
+                  closeOnConfirm: false
+                },
+                function(){
+                  $.ajax({
+                    url:'<?=base_url()?>merchants/delete',
+                    type:'post',
+                    data:{'MerchantID':MerchantID},
+                    success:function(res){
+                        if(res=='success'){
+                            swal("Deleted!", "Your imaginary file has been deleted.", "success");
+                            setTimeout(location.reload.bind(location), 900);
+                        }
+                    }
+                  });  
+                });
+            }
+            function deleteBrand(id){
+                var BrandID = id;
+                $('body').removeClass('timer-alert');
+                swal({
+                  title: "Are you sure?",
+                  text: "Your will not be able to recover this imaginary file!",
+                  type: "warning",
+                  showCancelButton: true,
+                  confirmButtonClass: "btn btn-danger",
+                  confirmButtonText: "Yes, delete it!",
+                  closeOnConfirm: false
+                },
+                function(){
+                  $.ajax({
+                    url:'<?=base_url()?>brands/delete',
+                    type:'post',
+                    data:{'BrandID':BrandID},
                     success:function(res){
                         if(res=='success'){
                             swal("Deleted!", "Your imaginary file has been deleted.", "success");
@@ -874,5 +939,25 @@
         <script src="<?=base_url()?>assets/plugins/fancyuploder/jquery.iframe-transport.js"></script>
         <script src="<?=base_url()?>assets/plugins/fancyuploder/jquery.fancy-fileupload.js"></script>
         <script src="<?=base_url()?>assets/plugins/fancyuploder/fancy-uploader.js"></script>
+        <!-- MODAL -->
+        <div class="modal fade" id="largeModal" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header pd-x-20">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        </button>
+                    </div>
+                    <div class="modal-body pd-20">
+                        <p>Modal body text goes here.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary br-7" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END MODAL -->
     </body>
 </html>

@@ -50,7 +50,6 @@
                                                             <th class="wd-20p border-bottom-0">Payment Link</th>
                                                             <th class="wd-20p border-bottom-0">Created At</th>
                                                             <th class="wd-15p border-bottom-0">Status</th>
-                                                            <th class="wd-10p border-bottom-0">Other Details</th>
                                                             <th class="wd-25p border-bottom-0">Action</th>
                                                         </tr>
                                                     </thead>
@@ -67,6 +66,7 @@
                                                                 $statusbtn = '<button class="btn btn-info">Active</button>';
 
                                                             }
+                                                            $MerchantID = $merchant['MerchantID'];
                                                             ?>
                                                             <tr>
                                                                 <td><?=$merchant['MerchantID']?></td>
@@ -75,8 +75,18 @@
                                                                 <td><?=$merchant['paymentlink']?></td>
                                                                 <td><?=date_format(date_create($merchant['created_at']),'d-M-Y h:i a')?></td>
                                                                 <td><?=$statusbtn?></td>
-                                                                <td>Details Button</td>
-                                                                <td>Action</td>
+                                                                <td>
+                                                                    <div class="dropdown">
+                                                                        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">
+                                                                            <i class="fe fe-edit"></i>
+                                                                        </button>
+                                                                        <div class="dropdown-menu">
+                                                                            <a id="<?=$MerchantID?>" class="dropdown-item" href="javascript:void(0)" onclick="detailMerchant(this.id)">Details of Merchant</a>
+                                                                            <a class="dropdown-item" href="<?=base_url()?>merchants/edit/<?=$MerchantID?>">Edit Merchant</a>
+                                                                            <a id="<?=$MerchantID?>" class="dropdown-item" onclick="deleteMerchant(this.id)" href="javascript:void(0)">Delete Merchant</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
                                                             </tr>
                                                             <?php
                                                             }

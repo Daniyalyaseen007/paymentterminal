@@ -78,7 +78,17 @@
                                                                 <td><?=$brand['BrandEmail']?></td>
                                                                 <td><?=date_format(date_create($brand['Created']),'d-M-Y h:i a')?></td>
                                                                 <td><?=$statusbtn?></td>
-                                                                <td><?=$statusbtn?></td>
+                                                                <td>
+                                                                    <div class="dropdown">
+                                                                        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">
+                                                                            <i class="fe fe-edit"></i>
+                                                                        </button>
+                                                                        <div class="dropdown-menu">
+                                                                            <a class="dropdown-item" href="<?=base_url()?>brands/edit/<?=$brand['BrandID']?>">Edit Brand</a>
+                                                                            <a id="<?=$brand['BrandID']?>" class="dropdown-item" onclick="deleteBrand(this.id)" href="javascript:void(0)">Delete Brand</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
                                                             </tr>
                                                             <?php
                                                             }

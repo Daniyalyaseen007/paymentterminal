@@ -46,6 +46,7 @@
                                                         <tr>
                                                             <th class="wd-15p border-bottom-0">#</th>
                                                             <th class="wd-15p border-bottom-0">Merchant Name</th>
+                                                            <th class="wd-15p border-bottom-0">Date</th>
                                                             <th class="wd-20p border-bottom-0">Brand Name</th>
                                                             <th class="wd-20p border-bottom-0">Service Name</th>
                                                             <th class="wd-20p border-bottom-0">Agent Name</th>
@@ -89,6 +90,7 @@
                                                             <tr>
                                                                 <td><?=++$count;?></td>
                                                                 <td><?=$link["M_DName"]?></td>
+                                                                <td><?=date_format(date_create($link["LinkCreatedat"]),'d-M-Y h:i a')?></td>
                                                                 <td><?=$link["BrandName"]?></td>
                                                                 <td><?=$serviceText?></td>
                                                                 <td><?=$link["UserFirstName"].' '.$link["UserLastName"]?></td>

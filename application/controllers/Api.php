@@ -221,6 +221,34 @@ class Api extends CI_Controller {
 	  $this->db->update("paymentlink", $array);
 	  echo $this->db->last_query();
 	}
+	public function updatedata3(){
+	    $token = $_POST["tokenID"];
+	    $pt_name = $_POST["pt_name"];
+	    $pt_email = $_POST["email"];
+	    $pt_number = $_POST["number"];
+	    $array = array(
+	        "customerName"=>$pt_name,
+	        "CustomerEmail"=>$pt_email,
+	        "CustomerNumber"=>$pt_number,
+	        );
+	    
+	  $this->db->where('tokenID', $token);
+	  $this->db->update("paymentlink", $array);
+	  echo $this->db->last_query();
+	}
+	public function updatedata4(){
+	    $token = $_POST["tokenID"];
+	    $pt_name = $_POST["pt_name"];
+	    $pt_email = $_POST["email"];
+	    $pt_number = $_POST["number"];
+	    $array = array(
+	        "LinkStatus"=>1,
+	        );
+	    
+	  $this->db->where('tokenID', $token);
+	  $this->db->update("paymentlink", $array);
+	  echo $this->db->last_query();
+	}
 	public function Service($ID=null){
 		$array = array("ServiceID"=>$ID);
 		$child= $this->services->SearchServices($array);
